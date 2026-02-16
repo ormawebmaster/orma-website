@@ -1,0 +1,9 @@
+
+{
+  "name": "Recrutement Orma Swiss SA",
+  "description": "Plateforme de recrutement immersive pour Orma Swiss SA - Agencement de prestige.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
