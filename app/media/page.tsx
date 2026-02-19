@@ -1,4 +1,3 @@
-
 "use client"
 
 import { useState } from "react"
@@ -69,6 +68,11 @@ export default function MediaPage() {
 
   // Then sort
   const sortedMediaItems = [...filteredByCategory].sort((a, b) => {
+    // Pinned items come first
+    if (a.pinned && !b.pinned) return -1;
+    if (!a.pinned && b.pinned) return 1;
+
+    // Then sort by date
     const dateA = new Date(a.date).getTime();
     const dateB = new Date(b.date).getTime();
     return sortOrder === 'newest' ? dateB - dateA : dateA - dateB;
@@ -158,4 +162,3 @@ export default function MediaPage() {
     </main>
   )
 }
-

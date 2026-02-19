@@ -29,54 +29,45 @@ export function SavoirFaire() {
           <div className="order-1 lg:order-2">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Notre savoir-faire</h2>
             <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
-              Depuis plusieurs décennies, ORMA transforme les idées en réalisations concrètes.
-              Nous réunissons design, ingénierie, ergonomie et fabrication au sein d’un même écosystème pour créer des solutions d’aménagement sur mesure, durables et performantes.
+              Depuis plus de 75 ans, ORMA transforme les idées en réalisations concrètes en réunissant design, ingénierie, ergonomie et fabrication au sein d’un même écosystème. Cette approche globale nous permet de concevoir des solutions d’aménagement sur mesure, durables et performantes, adaptées aux exigences de chaque projet.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              De la conception à la fabrication, chaque projet bénéficie d’un pilotage rigoureux, d’un haut niveau d’exigence et d’une attention particulière portée aux détails, au confort d’usage, aux délais et à la qualité des finitions.
-
-
+              De l’étude initiale jusqu’à la fabrication en atelier, chaque réalisation bénéficie d’un pilotage rigoureux, d’un haut niveau d’exigence et d’une attention particulière portée aux détails, au confort d’usage, au respect des délais et à la qualité des finitions.
             </p>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Points forts :
+            <p className="text-lg font-semibold mb-4">
+              Nos points forts :
             </p>
 
             <ul className="space-y-4 mb-8">
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-lg">Plus de 75 ans d’expérience
-                </span>
+                <CheckCircle2 className="w-6 h-6 text-[#CC2A3F] flex-shrink-0 mt-0.5" />
+                <span className="text-lg text-muted-foreground">Plus de 75 ans d’expérience</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-lg"> Solutions 100 % sur mesure
-                </span>
+                <CheckCircle2 className="w-6 h-6 text-[#CC2A3F] flex-shrink-0 mt-0.5" />
+                <span className="text-lg text-muted-foreground">Solutions 100 % sur mesure</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-lg">Ergonomie pensée pour l’utilisateur
-                </span>
+                <CheckCircle2 className="w-6 h-6 text-[#CC2A3F] flex-shrink-0 mt-0.5" />
+                <span className="text-lg text-muted-foreground">Ergonomie pensée pour l’utilisateur</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-lg">Accompagnement de A à Z
-                </span>
+                <CheckCircle2 className="w-6 h-6 text-[#CC2A3F] flex-shrink-0 mt-0.5" />
+                <span className="text-lg text-muted-foreground">Accompagnement global, de A à Z</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-lg">Équipe pluridisciplinaire intégrée
-                </span>
+                <CheckCircle2 className="w-6 h-6 text-[#CC2A3F] flex-shrink-0 mt-0.5" />
+                <span className="text-lg text-muted-foreground">Équipe pluridisciplinaire intégrée</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-lg">Qualité, fiabilité et durabilité
-                </span>
+                <CheckCircle2 className="w-6 h-6 text-[#CC2A3F] flex-shrink-0 mt-0.5" />
+                <span className="text-lg text-muted-foreground">Qualité, fiabilité et durabilité</span>
               </li>
             </ul>
 
             <Link href="/a-propos">
               <Button size="lg" className="bg-[#CC2A3F] hover:bg-[#b02536] text-white rounded-full px-8 py-6 text-base">
-                Découvrez notre atelier
+                Découvrir ORMA
               </Button>
             </Link>
           </div>

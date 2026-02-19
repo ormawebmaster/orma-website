@@ -10,25 +10,25 @@ import { useCallback, useEffect, useState } from "react"
 
 const slides = [
     {
-        image: "/orma-building.jpg",
+        image: "/orma-building (1) 2.jpg",
         alt: "ORMA Building",
         title: "ORMA depuis 1948",
         subtitle: "Issus de l'ameublement, vers l'agencement... aujourd'hui fabricants."
     },
     {
-        image: "/orma-warehouse.png",
-        alt: "ORMA Warehouse",
-        title: "Le bien-être au travail ne s'improvise pas",
-        subtitle: "Des solutions ergonomiques conçues pour votre confort et votre productivité."
-    },
-    {
-        image: "/orma-building.jpg",
+        image: "/slider 2 .jpeg",
         alt: "ORMA Excellence",
         title: "Design & build",
         subtitle: "Aménagements sur mesure pour bureaux, industries et espaces horlogers."
     },
     {
-        image: "/orma-building.jpg",
+        image: "/slider 3.png",
+        alt: "ORMA Warehouse",
+        title: "Le bien-être au travail ne s'improvise pas",
+        subtitle: "Des solutions ergonomiques conçues pour votre confort et votre productivité."
+    },
+    {
+        image: "/slider 4.png",
         alt: "ORMA Innovation",
         title: "Innovation & Qualité",
         subtitle: "Des solutions modernes pour répondre aux exigences de demain."
@@ -68,7 +68,7 @@ export function Hero3() {
                 {/* Slider Container with Rounded Corners - Ofinto Style */}
                 <div className="relative w-full max-w-[1500px] mx-auto rounded-3xl overflow-hidden shadow-sm">
                     {/* Embla Carousel */}
-                    <div className="relative aspect-[16/6.8]" ref={emblaRef}>
+                    <div className="relative h-[600px] sm:h-[700px] md:h-auto md:aspect-[16/6.8]" ref={emblaRef}>
                         <div className="flex h-full">
                             {slides.map((slide, index) => (
                                 <div key={index} className="relative flex-[0_0_100%] h-full">
@@ -86,15 +86,13 @@ export function Hero3() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent pointer-events-none"></div>
 
                     {/* Content Overlay - Bottom Left (moved higher) */}
-                    <div className="absolute bottom-8 md:bottom-12 lg:bottom-16 left-0 right-0 p-6 md:p-10 lg:p-12">
+                    <div className="absolute bottom-8 md:bottom-12 lg:bottom-16 left-0 right-0 p-6 md:p-10 lg:p-12 pointer-events-none">
                         {/* Title with PP Neue Montreal Style */}
                         <h1
-                            className="text-white mb-2 whitespace-nowrap"
+                            className="text-white mb-2 max-w-full text-4xl sm:text-5xl md:text-[60px] md:leading-[66px] whitespace-normal md:whitespace-nowrap"
                             style={{
                                 fontFamily: "'PP Neue Montreal', 'Inter', 'Helvetica Neue', sans-serif",
                                 fontWeight: 500,
-                                fontSize: '60px',
-                                lineHeight: '66px',
                                 fontStyle: 'normal'
                             }}
                         >
@@ -109,7 +107,7 @@ export function Hero3() {
                         )}
 
                         {/* CTA Buttons */}
-                        <div className="flex flex-wrap items-center gap-4">
+                        <div className="flex flex-wrap items-center gap-4 pointer-events-auto">
                             <Link href="/contact">
                                 <Button
                                     size="lg"

@@ -12,12 +12,20 @@ import { Button } from "@/components/ui/button"
 
 const allProjects = [
   {
+    category: "Agencement de Bureaux", // Or "Collectivité" if available, sticking to existing categories for now
+    image: "/632287536_18258210934288066_2230392133929048762_n.jpg",
+    title: "Projet réalisé en 2021 à Saint-Blaise",
+    description: "Aménagement complet de mobilier pour un collège : salles de classe, bureaux administratifs et espaces de direction.",
+    date: "2021-09-01",
+    slug: "../media/projet-realise-en-2021-a-saint-blaise", // Navigate to media page
+  },
+  {
     category: "Agencement de Bureaux",
-    image: "/ref-mobilier-bureau-1.jpg",
-    title: "Mobilier de Bureau",
-    description: "Équipement en bureaux assis-debout, sièges ergonomiques, salle de conférence et espace lounge avec traitement décoratif mural graphique.",
-    date: "2025-02-12",
-    slug: "mobilier-de-bureau",
+    image: "/Cablex_pub_final.jpg",
+    title: "Cablex SA, Neuchâtel",
+    description: "Valorisation et réorganisation des espaces de travail post covid pour 30 collaborateurs.",
+    date: "2024-06-01", // Updated for improved visibility in list
+    slug: "cablex-neuchatel",
   },
   {
     category: "Industrie",

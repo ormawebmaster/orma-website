@@ -25,9 +25,9 @@ export function News() {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-left mb-4">Actualités & Médias</h2>
         <p className="text-left text-muted-foreground mb-16 max-w-3xl">
-          Plongez dans l’univers d’ORMA à travers nos dernières actualités, projets et temps forts.
-
-          Un aperçu de notre savoir-faire en action.
+          Plongez dans l’univers ORMA à travers nos projets, nos actualités et nos temps forts.
+          <br />
+          Un aperçu concret de notre savoir-faire, de nos réalisations et de notre expertise en mouvement.
         </p>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">

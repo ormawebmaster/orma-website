@@ -10,31 +10,31 @@ const methodologySteps = [
   {
     id: 1,
     title: "Votre inspiration",
-    description: "Vous nous décrivez votre rêve pour repousser les limites de l'espace.",
+    description: "Vous partagez votre vision et vos envies. Nous donnons forme à vos idées.",
     angle: 315, // top-right - DÉPART
   },
   {
     id: 2,
     title: "Notre solution",
-    description: "Nous dessinons les premiers contours de votre nouvel environnement.",
+    description: "Nous imaginons un espace cohérent et réalisable. Design, usage et équilibre au cœur du projet.",
     angle: 15, // right - slightly lower
   },
   {
     id: 3,
     title: "Notre concrétisation",
-    description: "Nous construisons, transformons, installons l'espace de vos rêves.",
+    description: "Nous fabriquons et installons avec précision. Votre projet devient réalité.",
     angle: 90, // bottom
   },
   {
     id: 4,
     title: "Votre expérimentation",
-    description: "Vous testez les éléments de votre projet et nous ajustons ensemble les détails qui créent une atmosphère à votre image.",
+    description: "Vous explorez, ajustez et validez les choix essentiels. Un projet construit ensemble.",
     angle: 166, // left - slightly lower
   },
   {
     id: 5,
     title: "Votre satisfaction",
-    description: "Votre satisfaction est notre récompense.",
+    description: "Votre confiance guide chacune de nos actions. Votre satisfaction est notre récompense. ",
     angle: 225, // top-left - ARRIVÉE
   },
 ]
@@ -117,6 +117,7 @@ export function MethodologyDiagram() {
     <section className="relative py-16 md:py-24 px-4 md:px-12 lg:px-20 overflow-hidden">
       {/* Background avec sky */}
       <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-white/40 md:bg-transparent z-10" />
         <img
           src="/sky5.png"
           alt="Sky background"
@@ -130,9 +131,8 @@ export function MethodologyDiagram() {
           Notre Méthode de Fonctionnement
         </h2>
 
-        {/* Container principal - forme ovale HORIZONTALE */}
-        <div className="relative w-full" style={{ paddingBottom: '55%' }}>
-
+        {/* Container principal - Desktop */}
+        <div className="hidden md:block relative w-full" style={{ paddingBottom: '55%' }}>
           {/* Grand ovale extérieur rouge foncé HORIZONTAL (forme "O" du logo) */}
           <div
             className="absolute"
@@ -230,7 +230,7 @@ export function MethodologyDiagram() {
               Votre satisfaction
             </h4>
             <p className="text-[8px] md:text-[10px] text-gray-600 leading-snug line-clamp-3">
-              Votre satisfaction est notre récompense
+              Votre confiance guide chacune de nos actions. Votre satisfaction est notre récompense.
             </p>
           </Link>
 
@@ -255,7 +255,7 @@ export function MethodologyDiagram() {
               Votre expérimentation
             </h4>
             <p className="text-[8px] md:text-[10px] text-gray-600 leading-snug line-clamp-3">
-              Vous testez les éléments de votre projet et nous ajustons ensemble les détails.
+              Vous explorez, ajustez et validez les choix essentiels. Un projet construit ensemble.
             </p>
           </Link>
 
@@ -281,7 +281,7 @@ export function MethodologyDiagram() {
               Notre concrétisation
             </h4>
             <p className="text-[8px] md:text-[10px] text-gray-600 leading-snug line-clamp-3">
-              Nous construisons, transformons, installons l'espace de vos rêves.
+              Nous fabriquons et installons avec précision. Votre projet devient réalité.
             </p>
           </Link>
 
@@ -306,7 +306,7 @@ export function MethodologyDiagram() {
               Votre inspiration
             </h4>
             <p className="text-[8px] md:text-[10px] text-gray-600 leading-snug line-clamp-3">
-              Vous nous décrivez votre rêve pour repousser les limites de l'espace.
+              Vous partagez votre vision et vos envies. Nous donnons forme à vos idées.
             </p>
           </Link>
 
@@ -331,10 +331,78 @@ export function MethodologyDiagram() {
               Notre solution
             </h4>
             <p className="text-[8px] md:text-[10px] text-gray-600 leading-snug line-clamp-3">
-              Nous dessinons les premiers contours de votre nouvel environnement.
+              Nous imaginons un espace cohérent et réalisable. Design, usage et équilibre au cœur du projet.
             </p>
           </Link>
 
+        </div>
+
+        {/* Mobile View: Vertical Structured Cards */}
+        <div className="md:hidden flex flex-col gap-6 mt-8 relative z-20">
+          {[
+            {
+              step: "01",
+              title: "Votre inspiration",
+              desc: "Vous partagez votre vision et vos envies. Nous donnons forme à vos idées.",
+              link: "/methode/votre-inspiration"
+            },
+            {
+              step: "02",
+              title: "Notre solution",
+              desc: "Nous imaginons un espace cohérent et réalisable. Design, usage et équilibre au cœur du projet.",
+              link: "/methode/notre-solution"
+            },
+            {
+              step: "03",
+              title: "Notre concrétisation",
+              desc: "Nous fabriquons et installons avec précision. Votre projet devient réalité.",
+              link: "/methode/notre-concretisation"
+            },
+            {
+              step: "04",
+              title: "Votre expérimentation",
+              desc: "Vous explorez, ajustez et validez les choix essentiels. Un projet construit ensemble.",
+              link: "/methode/votre-experimentation"
+            },
+            {
+              step: "05",
+              title: "Votre satisfaction",
+              desc: "Votre confiance guide chacune de nos actions. Votre satisfaction est notre récompense.",
+              link: "/methode/votre-satisfaction"
+            }
+          ].map((item, index) => (
+            <Link
+              key={index}
+              href={item.link}
+              className="bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] p-6 relative overflow-hidden transition-transform hover:-translate-y-1"
+            >
+              {/* Left Accent Line */}
+              <div
+                className="absolute left-0 top-0 bottom-0 w-1.5"
+                style={{ backgroundColor: redColor }}
+              />
+
+              <div className="flex items-start gap-4">
+                {/* Step Number Badge */}
+                <div
+                  className="flex items-center justify-center w-10 h-10 rounded-full font-bold text-white shrink-0"
+                  style={{ backgroundColor: redColor }}
+                >
+                  {item.step}
+                </div>
+
+                {/* Content */}
+                <div>
+                  <h4 className="font-bold text-lg mb-2" style={{ color: redColor }}>
+                    {item.title}
+                  </h4>
+                  <p className="text-gray-600 leading-relaxed text-sm">
+                    {item.desc}
+                  </p>
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </section>

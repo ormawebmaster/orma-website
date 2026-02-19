@@ -8,9 +8,20 @@ export interface MediaItem {
     date: string
     slug?: string
     category: string
+    pinned?: boolean
 }
 
 export const mediaItems: MediaItem[] = [
+    {
+        image: "/632287536_18258210934288066_2230392133929048762_n.jpg",
+        title: "Projet réalisé en 2021 à Saint-Blaise !",
+        description: "Livraison et installation complète de mobilier pour un collège : bureaux administratifs et espaces éducatifs.",
+        linkText: "Lire plus",
+        date: "2021-09-01",
+        slug: "/media/projet-realise-en-2021-a-saint-blaise",
+        category: "Article",
+        pinned: true,
+    },
     {
         image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop",
         title: "Orma vous souhaite un très bel été !",
@@ -81,7 +92,10 @@ export const mediaItems: MediaItem[] = [
 // Fonction pour obtenir les articles triés par date (plus récent en premier)
 export function getLatestMediaItems(count: number = 3): MediaItem[] {
     return [...mediaItems]
-        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+        .sort((a, b) => {
+            if (a.pinned && !b.pinned) return -1;
+            if (!a.pinned && b.pinned) return 1;
+            return new Date(b.date).getTime() - new Date(a.date).getTime();
+        })
         .slice(0, count)
 }
-

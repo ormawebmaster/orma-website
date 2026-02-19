@@ -15,10 +15,11 @@ export function AboutPresentation() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">Présentation</h2>
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                Depuis 1948, <strong>ORMA</strong> accompagne les entreprises dans la conception et l'aménagement d'espaces de travail durables et performants. Grâce à son expertise en architecture d'intérieur, fabrication sur mesure et solutions ergonomiques, l'entreprise crée des environnements fonctionnels, esthétiques et adaptés aux besoins actuels.
+                Depuis 1948, <strong>ORMA</strong> accompagne entreprises et particuliers dans la conception et l’aménagement d’espaces durables, fonctionnels et inspirants.
+                Grâce à une expertise reconnue en architecture d’intérieur, fabrication sur mesure et solutions ergonomiques, nous créons des environnements où design, usage et performance s’équilibrent naturellement.
               </p>
               <p>
-                Forte de plus de <strong>75 ans d'expérience</strong>, ORMA s'appuie sur un savoir-faire reconnu et une approche basée sur l'écoute, le conseil et l'innovation, afin de transformer chaque projet en un espace professionnel cohérent, inspirant et en adéquation avec l'identité du client.
+                Forte de plus de <strong>75 ans d’expérience</strong>, ORMA s’appuie sur une approche fondée sur l’écoute, le conseil et l’innovation pour transformer chaque projet en un espace cohérent, esthétique et adapté aux besoins d’aujourd’hui.
               </p>
             </div>
           </div>

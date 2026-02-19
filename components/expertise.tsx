@@ -6,19 +6,19 @@ import { ArrowRight } from "lucide-react"
 const expertiseAreas = [
   {
     title: "Manufacture & Fabrication",
-    description: "Donner vie à vos idées grâce à une fabrication sur mesure, précise et maîtrisée. ",
-    image: "/a.webp",
+    description: "Donner vie à vos projets grâce à une fabrication suisse précise et maîtrisée. Des solutions sur mesure, pensées pour la performance et la durabilité.",
+    image: "/a1.jpg",
     href: "/manufacture-et-fabrication",
   },
   {
     title: "Mobilier & Agencement",
-    description: "Transformer chaque espace en un lieu fonctionnel, esthétique et inspirant. ",
-    image: "/b.webp",
+    description: "Créer des espaces fonctionnels où design et ergonomie se rencontrent. Chaque détail est conçu pour valoriser votre environnement de travail.",
+    image: "/b1.jpeg",
     href: "/mobilier-d-agencement",
   },
   {
     title: "Prestation de Service",
-    description: "Vous accompagner de l’idée initiale jusqu’à la réalisation finale, en toute sérénité.",
+    description: "Un accompagnement global, de la conception à la réalisation finale. Expertise, conseil et suivi pour des projets menés en toute sérénité.",
     image: "/cc.webp",
     href: "/prestation-de-service",
   },
@@ -30,9 +30,9 @@ export function Expertise() {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-left mb-4">Nos domaines d'expertise</h2>
         <p className="text-left text-muted-foreground mb-16 max-w-3xl">
-          Nous concevons et réalisons des espaces fonctionnels, esthétiques et durables, adaptés à chaque besoin.
-
-          De la conception à la fabrication, nous maîtrisons chaque étape pour garantir des projets performants et sur mesure.
+          Depuis plus de 75 ans, ORMA conçoit et réalise des environnements fonctionnels, esthétiques et durables, pensés pour répondre aux exigences des professionnels comme des particuliers.
+          <br /><br />
+          De l’étude initiale à la fabrication en atelier, nous maîtrisons chaque étape du projet afin de garantir des solutions sur mesure, performantes et parfaitement adaptées à leur usage.
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">

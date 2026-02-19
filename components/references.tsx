@@ -30,8 +30,8 @@ export function References() {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-left mb-4">Nos Références</h2>
         <p className="text-left text-muted-foreground mb-16 max-w-3xl">
-          Chaque projet est une démonstration concrète de notre savoir-faire.
-          Bureaux, laboratoires, espaces commerciaux ou environnements collaboratifs : ORMA accompagne des clients exigeants dans la création d’espaces performants, durables et sur mesure.
+          Chaque réalisation illustre concrètement notre savoir-faire et notre exigence de qualité.
+          Bureaux, laboratoires, espaces commerciaux ou environnements collaboratifs : ORMA accompagne des clients exigeants dans la conception et la création d’espaces performants, durables et entièrement sur mesure.
         </p>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">

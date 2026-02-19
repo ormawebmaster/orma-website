@@ -39,6 +39,13 @@ export const metadata: Metadata = {
   },
 }
 
+export const viewport = {
+  width: 1440,
+  initialScale: 0.25,
+  maximumScale: 5,
+  userScalable: true,
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{

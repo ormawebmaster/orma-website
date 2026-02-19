@@ -81,8 +81,8 @@ export function AboutHistory() {
             {/* Image historique ORMA */}
             <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
               <img
-                src="/orma-historique.png"
-                alt="Archive ORMA - Pour que le confort au bureau ne relève pas du hasard"
+                src="/orma journal.png"
+                alt="Archive ORMA Journal"
                 className="w-full h-auto"
               />
             </div>

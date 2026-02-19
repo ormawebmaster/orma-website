@@ -26,6 +26,12 @@ const referenceCategories = [
         description: "Création d'un espace de réunion haut de gamme avec équipements intégrés.",
         slug: "mobilier-de-bureau"
       },
+      {
+        image: "/Cablex_pub_final.jpg",
+        title: "Cablex SA, Neuchâtel",
+        description: "Valorisation et réorganisation des espaces de travail post covid pour 30 collaborateurs.",
+        slug: "cablex-neuchatel"
+      },
     ],
   },
   {
@@ -79,7 +85,7 @@ export function ReferencesGrid() {
           <div key={catIndex} className="mb-16 last:mb-0">
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-8">{category.name}</h3>
             <div className="grid md:grid-cols-3 gap-8">
-              {category.projects.map((project, projIndex) => (
+              {category.projects.slice(0, 3).map((project, projIndex) => (
                 <Card key={projIndex} className="overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col p-0 gap-0">
                   <div className="relative h-64">
                     <Image
