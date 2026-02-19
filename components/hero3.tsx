@@ -16,7 +16,7 @@ const slides = [
         subtitle: "Issus de l'ameublement, vers l'agencement... aujourd'hui fabricants."
     },
     {
-        image: "/slider 2 .jpeg",
+        image: "/orma-warehouse hd.png",
         alt: "ORMA Excellence",
         title: "Design & build",
         subtitle: "Aménagements sur mesure pour bureaux, industries et espaces horlogers."
