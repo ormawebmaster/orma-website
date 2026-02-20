@@ -21,11 +21,41 @@ export function ContactForm() {
     role: "",
     message: "",
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("[v0] Form submitted:", formData)
-    // Handle form submission
+    setIsSubmitting(true)
+    setSubmitStatus("idle")
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setSubmitStatus("success")
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          category: "",
+          representative: "non",
+          companyName: "",
+          role: "",
+          message: "",
+        })
+      } else {
+        setSubmitStatus("error")
+      }
+    } catch {
+      setSubmitStatus("error")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -196,10 +226,25 @@ export function ContactForm() {
                 type="submit"
                 size="sm"
                 variant="destructive"
-                className="bg-[#CC2A3F] hover:bg-[#b02536] w-full md:w-auto px-12 rounded-full"
+                disabled={isSubmitting}
+                className="bg-[#CC2A3F] hover:bg-[#b02536] w-full md:w-auto px-12 rounded-full disabled:opacity-50"
               >
-                Envoyer
+                {isSubmitting ? "Envoi en cours..." : "Envoyer"}
               </Button>
+
+              {/* Success Message */}
+              {submitStatus === "success" && (
+                <div className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg">
+                  ✅ Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.
+                </div>
+              )}
+
+              {/* Error Message */}
+              {submitStatus === "error" && (
+                <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
+                  ❌ Une erreur est survenue. Veuillez réessayer ou nous contacter directement à info@orma.ch.
+                </div>
+              )}
             </form>
           </div>
         </div>

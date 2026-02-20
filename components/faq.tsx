@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from "react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 const faqCategories = [
@@ -114,13 +117,17 @@ const faqCategories = [
 ]
 
 export function FAQ() {
+  const [showAll, setShowAll] = useState(false)
+
+  const visibleCategories = showAll ? faqCategories : faqCategories.slice(0, 1)
+
   return (
     <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-left mb-12">Foire aux questions</h2>
 
         <div className="space-y-4">
-          {faqCategories.map((category, categoryIndex) => (
+          {visibleCategories.map((category, categoryIndex) => (
             <div key={categoryIndex}>
               <h3 className="text-xl font-semibold mb-4">
                 <span>{category.title}</span>
@@ -143,6 +150,15 @@ export function FAQ() {
               </Accordion>
             </div>
           ))}
+        </div>
+
+        <div className="flex justify-center mt-8">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="px-6 py-3 bg-[#2D2D2D] text-white rounded-lg font-medium hover:bg-[#404040] transition-colors duration-200"
+          >
+            {showAll ? "Afficher moins" : "Afficher plus"}
+          </button>
         </div>
       </div>
     </section>
