@@ -15,13 +15,9 @@ export function ContactInfo() {
             <div className="space-y-4 text-sm text-muted-foreground">
               <div>
                 <p className="font-semibold text-foreground">Orma Suisse</p>
-                <p>Rue du Lac 22b</p>
-                <p>CH-1020 Renens</p>
-              </div>
-              <div className="pt-2">
-                <a href="https://www.google.com/maps/place/ORMA+Swiss+SA/@46.9861112,6.8628526,614m/data=!3m2!1e3!4b1!4m6!3m5!1s0x478e0a281d3aeb2f:0xc91a6c9bb5bf1b8e!8m2!3d46.9861112!4d6.8654275!16s%2Fg%2F1wc30457" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                  <p className="font-semibold text-foreground">Orma Suisse</p>
-                  <p>Rue de la Chapelle 54-56 CH-2035 Corcelles NE, Suisse</p>
+                <p>• Rue du Lac 22b, CH-1020 Renens</p>
+                <a href="https://www.google.com/maps/place/ORMA+Swiss+SA/@46.9861112,6.8628526,614m/data=!3m2!1e3!4b1!4m6!3m5!1s0x478e0a281d3aeb2f:0xc91a6c9bb5bf1b8e!8m2!3d46.9861112!4d6.8654275!16s%2Fg%2F1wc30457" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors block mt-2">
+                  <p>• Rue de la Chapelle 54-56 CH-2035 Corcelles NE, Suisse</p>
                 </a>
               </div>
               <div className="pt-2">

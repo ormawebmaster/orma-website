@@ -117,48 +117,65 @@ const faqCategories = [
 ]
 
 export function FAQ() {
-  const [showAll, setShowAll] = useState(false)
+  const [expandedCategories, setExpandedCategories] = useState<number[]>([])
 
-  const visibleCategories = showAll ? faqCategories : faqCategories.slice(0, 1)
+  const toggleCategory = (index: number) => {
+    setExpandedCategories((prev) =>
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
+    )
+  }
 
   return (
     <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-left mb-12">Foire aux questions</h2>
 
-        <div className="space-y-4">
-          {visibleCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex}>
-              <h3 className="text-xl font-semibold mb-4">
-                <span>{category.title}</span>
-              </h3>
-              <Accordion type="single" collapsible className="space-y-4">
-                {category.faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`category-${categoryIndex}-item-${index}`}
-                    className="bg-[#F3F4F6] border-0 rounded-lg shadow-md px-6 overflow-hidden"
-                  >
-                    <AccordionTrigger className="text-left font-medium hover:no-underline py-5">
-                      {faq.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground pb-5">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
+        <div className="space-y-6">
+          {faqCategories.map((category, categoryIndex) => (
+            <div key={categoryIndex} className="bg-[#F3F4F6] rounded-lg shadow-md overflow-hidden">
+              <button
+                onClick={() => toggleCategory(categoryIndex)}
+                className="w-full px-6 py-5 flex items-center justify-between hover:bg-[#EBEDF0] transition-colors"
+              >
+                <div className="text-left">
+                  <h3 className="text-lg font-semibold">{category.title}</h3>
+                  {!expandedCategories.includes(categoryIndex) && (
+                    <p className="text-sm text-muted-foreground mt-1">{category.faqs[0].question}</p>
+                  )}
+                </div>
+                <svg
+                  className={`w-5 h-5 text-[#CC2A3F] shrink-0 ml-4 transition-transform duration-200 ${expandedCategories.includes(categoryIndex) ? "rotate-180" : ""}`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {expandedCategories.includes(categoryIndex) && (
+                <div className="px-6 pb-5">
+                  <Accordion type="single" collapsible className="space-y-3">
+                    {category.faqs.map((faq, index) => (
+                      <AccordionItem
+                        key={index}
+                        value={`category-${categoryIndex}-item-${index}`}
+                        className="bg-white border-0 rounded-lg shadow-sm px-5 overflow-hidden"
+                      >
+                        <AccordionTrigger className="text-left font-medium hover:no-underline py-4 text-sm">
+                          {faq.question}
+                        </AccordionTrigger>
+                        <AccordionContent className="text-muted-foreground pb-4 text-sm">
+                          {faq.answer}
+                        </AccordionContent>
+                      </AccordionItem>
+                    ))}
+                  </Accordion>
+                </div>
+              )}
             </div>
           ))}
-        </div>
-
-        <div className="flex justify-center mt-8">
-          <button
-            onClick={() => setShowAll(!showAll)}
-            className="px-6 py-3 bg-[#2D2D2D] text-white rounded-lg font-medium hover:bg-[#404040] transition-colors duration-200"
-          >
-            {showAll ? "Afficher moins" : "Afficher plus"}
-          </button>
         </div>
       </div>
     </section>
