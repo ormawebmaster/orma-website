@@ -15,7 +15,7 @@ export default function LoginPage() {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault()
-        if (password === 'orma') {
+        if (password === 'orsi2026') {
             Cookies.set('auth', 'true', { expires: 7 })
             router.push('/')
             router.refresh()
