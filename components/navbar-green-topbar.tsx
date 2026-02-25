@@ -62,24 +62,24 @@ export function NavbarGreenTopBar() {
 
                     {/* Desktop Menu */}
                     <div className="hidden lg:flex items-center gap-6">
-                        {/* Manufacture et fabrication Dropdown */}
+                        {/* Savoir-faire & Fabrication Dropdown */}
                         <div onMouseEnter={() => setManufactureMenuOpen(true)} onMouseLeave={() => setManufactureMenuOpen(false)}>
                             <DropdownMenu open={manufactureMenuOpen} onOpenChange={setManufactureMenuOpen}>
                                 <DropdownMenuTrigger asChild>
                                     <Link href="/manufacture-et-fabrication" className="flex items-center gap-1 text-gray-800 hover:text-[#CC2A3F] transition-colors text-sm font-medium focus:outline-none">
-                                        Manufacture et fabrication <ChevronDown className="w-3.5 h-3.5" />
+                                        Savoir-faire & Fabrication <ChevronDown className="w-3.5 h-3.5" />
                                     </Link>
                                 </DropdownMenuTrigger>
                                 <DropdownMenuContent className="bg-white text-gray-800 p-2 rounded-md shadow-lg">
                                     <DropdownMenuItem asChild>
                                         <Link href="/methode-de-fonctionnement" className="block px-4 py-2 hover:bg-[#EAF2F0] rounded-md">
-                                            Méthode de Fonctionnement
+                                            Notre approche
                                         </Link>
                                     </DropdownMenuItem>
                                     <DropdownMenuSub>
                                         <DropdownMenuSubTrigger className="px-4 py-2 hover:bg-[#EAF2F0] rounded-md cursor-pointer">
                                             <Link href="/domaines-de-competence" className="flex-1">
-                                                Domaines de compétence
+                                                Expertises
                                             </Link>
                                         </DropdownMenuSubTrigger>
                                         <DropdownMenuPortal>
@@ -126,24 +126,24 @@ export function NavbarGreenTopBar() {
                             </DropdownMenu>
                         </div>
 
-                        {/* Mobilier d'agencement Dropdown */}
+                        {/* Agencement & Mobilier Dropdown */}
                         <div onMouseEnter={() => setMobilierMenuOpen(true)} onMouseLeave={() => setMobilierMenuOpen(false)}>
                             <DropdownMenu open={mobilierMenuOpen} onOpenChange={setMobilierMenuOpen}>
                                 <DropdownMenuTrigger asChild>
                                     <Link href="/mobilier-d-agencement" className="flex items-center gap-1 text-gray-800 hover:text-[#CC2A3F] transition-colors text-sm font-medium focus:outline-none">
-                                        Mobilier d'agencement <ChevronDown className="w-3.5 h-3.5" />
+                                        Agencement & Mobilier <ChevronDown className="w-3.5 h-3.5" />
                                     </Link>
                                 </DropdownMenuTrigger>
                                 <DropdownMenuContent className="bg-white text-gray-800 p-2 rounded-md shadow-lg">
                                     <DropdownMenuItem asChild>
                                         <Link href="/mobilier-methode-de-fonctionnement" className="block px-4 py-2 hover:bg-[#EAF2F0] rounded-md">
-                                            Méthode de Fonctionnement
+                                            Notre approche
                                         </Link>
                                     </DropdownMenuItem>
                                     <DropdownMenuSub>
                                         <DropdownMenuSubTrigger className="px-4 py-2 hover:bg-[#EAF2F0] rounded-md cursor-pointer">
                                             <Link href="/mobilier-domaines-de-competence" className="flex-1">
-                                                Domaines de compétence
+                                                Expertises
                                             </Link>
                                         </DropdownMenuSubTrigger>
                                         <DropdownMenuPortal>
@@ -185,12 +185,12 @@ export function NavbarGreenTopBar() {
                             </DropdownMenu>
                         </div>
 
-                        {/* Prestation de service Dropdown */}
+                        {/* Nos services Dropdown */}
                         <div onMouseEnter={() => setPrestationMenuOpen(true)} onMouseLeave={() => setPrestationMenuOpen(false)}>
                             <DropdownMenu open={prestationMenuOpen} onOpenChange={setPrestationMenuOpen}>
                                 <DropdownMenuTrigger asChild>
                                     <Link href="/prestation-de-service" className="flex items-center gap-1 text-gray-800 hover:text-[#CC2A3F] transition-colors text-sm font-medium focus:outline-none">
-                                        Prestation de service <ChevronDown className="w-3.5 h-3.5" />
+                                        Nos services <ChevronDown className="w-3.5 h-3.5" />
                                     </Link>
                                 </DropdownMenuTrigger>
                                 <DropdownMenuContent className="bg-white text-gray-800 p-2 rounded-md shadow-lg">
@@ -201,12 +201,12 @@ export function NavbarGreenTopBar() {
                                     </DropdownMenuItem>
                                     <DropdownMenuItem asChild>
                                         <Link href="/planification-dao" className="block px-4 py-2 hover:bg-[#EAF2F0] rounded-md">
-                                            Planification & DAO
+                                            Conception & Planification
                                         </Link>
                                     </DropdownMenuItem>
                                     <DropdownMenuItem asChild>
                                         <Link href="/livraison-installation" className="block px-4 py-2 hover:bg-[#EAF2F0] rounded-md">
-                                            Livraison et Installation (World Wilde)
+                                            Livraison & Installation (world wide)
                                         </Link>
                                     </DropdownMenuItem>
                                     <DropdownMenuItem asChild>
@@ -221,12 +221,12 @@ export function NavbarGreenTopBar() {
                                     </DropdownMenuItem>
                                     <DropdownMenuItem asChild>
                                         <Link href="/coaching-formations" className="block px-4 py-2 hover:bg-[#EAF2F0] rounded-md">
-                                            Coaching & Formations
+                                            Conseil & Formation
                                         </Link>
                                     </DropdownMenuItem>
                                     <DropdownMenuItem asChild>
                                         <Link href="/sourcing" className="block px-4 py-2 hover:bg-[#EAF2F0] rounded-md">
-                                            Sourcing
+                                    Sélection & Sourcing
                                         </Link>
                                     </DropdownMenuItem>
                                 </DropdownMenuContent>
@@ -240,7 +240,7 @@ export function NavbarGreenTopBar() {
                             Références
                         </Link>
                         <Link href="/media" className="text-gray-800 hover:text-[#CC2A3F] transition-colors text-sm font-medium">
-                            Media
+                            Actualités & Media
                         </Link>
                         <Link href="/carriere" className="flex items-center gap-1.5 text-gray-800 hover:text-[#CC2A3F] transition-colors text-sm font-medium">
                             Carrière
@@ -299,13 +299,13 @@ export function NavbarGreenTopBar() {
                             <Accordion type="single" collapsible className="w-full">
                                 <AccordionItem value="item-1">
                                     <AccordionTrigger className="text-gray-700 hover:text-gray-900 transition-colors py-2">
-                                        Manufacture et fabrication
+                                        Savoir-faire & Fabrication
                                     </AccordionTrigger>
                                     <AccordionContent className="pl-4 text-gray-600">
-                                        <Link href="/manufacture-et-fabrication" className="block py-2 font-bold text-[#CC2A3F] hover:text-[#b02536]" onClick={() => setIsMenuOpen(false)}>Tout voir Manufacture et fabrication</Link>
-                                        <Link href="/methode-de-fonctionnement" className="block py-2 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Méthode de Fonctionnement</Link>
+                                        <Link href="/manufacture-et-fabrication" className="block py-2 font-bold text-[#CC2A3F] hover:text-[#b02536]" onClick={() => setIsMenuOpen(false)}>Tout voir Savoir-faire & Fabrication</Link>
+                                        <Link href="/methode-de-fonctionnement" className="block py-2 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Notre approche</Link>
                                         <div className="py-2">
-                                            <Link href="/domaines-de-competence" className="font-semibold text-gray-800 block hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Domaines de compétence</Link>
+                                            <Link href="/domaines-de-competence" className="font-semibold text-gray-800 block hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Expertises</Link>
                                             <div className="pl-4 mt-1">
                                                 <Link href="/creation-conception" className="block py-1 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Création & Conception</Link>
                                                 <Link href="/fabrication-petite-serie" className="block py-1 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Fabrication de Petite série</Link>
@@ -320,13 +320,13 @@ export function NavbarGreenTopBar() {
                                 </AccordionItem>
                                 <AccordionItem value="item-2">
                                     <AccordionTrigger className="text-gray-700 hover:text-gray-900 transition-colors py-2">
-                                        Mobilier d'agencement
+                                        Agencement & Mobilier
                                     </AccordionTrigger>
                                     <AccordionContent className="pl-4 text-gray-600">
-                                        <Link href="/mobilier-d-agencement" className="block py-2 font-bold text-[#CC2A3F] hover:text-[#b02536]" onClick={() => setIsMenuOpen(false)}>Tout voir Mobilier d'agencement</Link>
-                                        <Link href="/mobilier-methode-de-fonctionnement" className="block py-2 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Méthode de Fonctionnement</Link>
+                                        <Link href="/mobilier-d-agencement" className="block py-2 font-bold text-[#CC2A3F] hover:text-[#b02536]" onClick={() => setIsMenuOpen(false)}>Tout voir Agencement & Mobilier</Link>
+                                        <Link href="/mobilier-methode-de-fonctionnement" className="block py-2 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Notre approche</Link>
                                         <div className="py-2">
-                                            <Link href="/mobilier-domaines-de-competence" className="font-semibold text-gray-800 block hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Domaines de compétence</Link>
+                                            <Link href="/mobilier-domaines-de-competence" className="font-semibold text-gray-800 block hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Expertises</Link>
                                             <div className="pl-4 mt-1">
                                                 <Link href="/amenagement-industriel" className="block py-1 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Aménagement Industriel</Link>
                                                 <Link href="/espaces-de-bureau" className="block py-1 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Espaces de Bureau</Link>
@@ -340,17 +340,17 @@ export function NavbarGreenTopBar() {
                                 </AccordionItem>
                                 <AccordionItem value="item-3">
                                     <AccordionTrigger className="text-gray-700 hover:text-gray-900 transition-colors py-2">
-                                        Prestation de service
+                                        Nos services
                                     </AccordionTrigger>
                                     <AccordionContent className="pl-4 text-gray-600">
-                                        <Link href="/prestation-de-service" className="block px-4 py-2 font-bold text-[#CC2A3F] hover:text-[#b02536]" onClick={() => setIsMenuOpen(false)}>Tout voir Prestation de service</Link>
+                                        <Link href="/prestation-de-service" className="block px-4 py-2 font-bold text-[#CC2A3F] hover:text-[#b02536]" onClick={() => setIsMenuOpen(false)}>Tout voir Nos services</Link>
                                         <Link href="/architecture-interieur" className="block px-4 py-2 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Architecture d'intérieur</Link>
-                                        <Link href="/planification-dao" className="block px-4 py-2 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Planification & DAO</Link>
-                                        <Link href="/livraison-installation" className="block px-4 py-2 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Livraison et Installation (World Wilde)</Link>
+                                        <Link href="/planification-dao" className="block px-4 py-2 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Conception & Planification</Link>
+                                        <Link href="/livraison-installation" className="block px-4 py-2 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Livraison & Installation (world wide)</Link>
                                         <Link href="/demenagement" className="block px-4 py-2 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Déménagement</Link>
                                         <Link href="/solutions-stockage" className="block px-4 py-2 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Solutions de stockage</Link>
-                                        <Link href="/coaching-formations" className="block px-4 py-2 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Coaching & Formations</Link>
-                                        <Link href="/sourcing" className="block px-4 py-2 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Sourcing</Link>
+                                        <Link href="/coaching-formations" className="block px-4 py-2 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Conseil & Formation</Link>
+                                        <Link href="/sourcing" className="block px-4 py-2 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Sélection & Sourcing</Link>
                                     </AccordionContent>
                                 </AccordionItem>
                             </Accordion>
@@ -373,7 +373,7 @@ export function NavbarGreenTopBar() {
                                 className="text-gray-700 hover:text-gray-900 transition-colors py-2"
                                 onClick={() => setIsMenuOpen(false)}
                             >
-                                Media
+                                Actualités & Media
                             </Link>
                             <Link
                                 href="/carriere"

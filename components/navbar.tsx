@@ -39,24 +39,24 @@ export function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-8">
-          {/* Manufacture et fabrication Dropdown */}
+          {/* Savoir-faire & Fabrication Dropdown */}
           <div onMouseEnter={() => setManufactureMenuOpen(true)} onMouseLeave={() => setManufactureMenuOpen(false)}>
             <DropdownMenu open={manufactureMenuOpen} onOpenChange={setManufactureMenuOpen}>
               <DropdownMenuTrigger asChild>
                 <Link href="/manufacture-et-fabrication" className="flex items-center gap-1 text-gray-700 dark:text-white hover:!text-red-600 dark:hover:!text-red-500 data-[state=open]:!text-red-600 transition-colors text-sm focus:outline-none">
-                  Manufacture et fabrication <ChevronDown className="w-4 h-4" />
+                  Savoir-faire & Fabrication <ChevronDown className="w-4 h-4" />
                 </Link>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-white dark:bg-[#263F43] text-gray-800 dark:text-white p-2 rounded-md shadow-lg">
                 <DropdownMenuItem asChild>
                   <Link href="/methode-de-fonctionnement" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-white/10 rounded-md">
-                    Méthode de Fonctionnement
+                    Notre approche
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuSub>
                   <DropdownMenuSubTrigger className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-white/10 rounded-md cursor-pointer">
                     <Link href="/domaines-de-competence" className="flex-1">
-                      Domaines de compétence
+                      Expertises
                     </Link>
                   </DropdownMenuSubTrigger>
                   <DropdownMenuPortal>
@@ -103,24 +103,24 @@ export function Navbar() {
             </DropdownMenu>
           </div>
 
-          {/* Mobilier d'agencement Dropdown */}
+          {/* Agencement & Mobilier Dropdown */}
           <div onMouseEnter={() => setMobilierMenuOpen(true)} onMouseLeave={() => setMobilierMenuOpen(false)}>
             <DropdownMenu open={mobilierMenuOpen} onOpenChange={setMobilierMenuOpen}>
               <DropdownMenuTrigger asChild>
                 <Link href="/mobilier-d-agencement" className="flex items-center gap-1 text-gray-700 dark:text-white hover:!text-red-600 dark:hover:!text-red-500 data-[state=open]:!text-red-600 transition-colors text-sm focus:outline-none">
-                  Mobilier d'agencement <ChevronDown className="w-4 h-4" />
+                  Agencement & Mobilier <ChevronDown className="w-4 h-4" />
                 </Link>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-white dark:bg-[#263F43] text-gray-800 dark:text-white p-2 rounded-md shadow-lg">
                 <DropdownMenuItem asChild>
                   <Link href="/mobilier-methode-de-fonctionnement" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-white/10 rounded-md">
-                    Méthode de Fonctionnement
+                    Notre approche
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuSub>
                   <DropdownMenuSubTrigger className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-white/10 rounded-md cursor-pointer">
                     <Link href="/mobilier-domaines-de-competence" className="flex-1">
-                      Domaines de compétence
+                      Expertises
                     </Link>
                   </DropdownMenuSubTrigger>
                   <DropdownMenuPortal>
@@ -162,23 +162,23 @@ export function Navbar() {
             </DropdownMenu>
           </div>
 
-          {/* Prestation de service Dropdown */}
+          {/* Nos services Dropdown */}
           <div onMouseEnter={() => setPrestationMenuOpen(true)} onMouseLeave={() => setPrestationMenuOpen(false)}>
             <DropdownMenu open={prestationMenuOpen} onOpenChange={setPrestationMenuOpen}>
               <DropdownMenuTrigger asChild>
                 <Link href="/prestation-de-service" className="flex items-center gap-1 text-gray-700 dark:text-white hover:!text-red-600 dark:hover:!text-red-500 data-[state=open]:!text-red-600 transition-colors text-sm focus:outline-none">
-                  Prestation de service <ChevronDown className="w-4 h-4" />
+                  Nos services <ChevronDown className="w-4 h-4" />
                 </Link>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-white dark:bg-[#263F43] text-gray-800 dark:text-white p-2 rounded-md shadow-lg">
                 <DropdownMenuItem asChild>
                   <Link href="/planification-dao" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-white/10 rounded-md">
-                    Planification & DAO
+                    Conception & Planification
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link href="/livraison-installation" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-white/10 rounded-md">
-                    Livraison et Installation (World Wilde)
+                    Livraison & Installation (world wide)
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
@@ -193,12 +193,12 @@ export function Navbar() {
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link href="/coaching-formations" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-white/10 rounded-md">
-                    Coaching & Formations
+                    Conseil & Formation
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link href="/sourcing" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-white/10 rounded-md">
-                    Sourcing
+                                    Sélection & Sourcing
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -212,7 +212,7 @@ export function Navbar() {
             Références
           </Link>
           <Link href="/media" className="text-gray-700 dark:text-white hover:!text-red-600 dark:hover:!text-red-500 transition-colors text-sm">
-            Media
+            Actualités & Media
           </Link>
           {/* Language toggle - DISABLED FOR NOW
           <DropdownMenu>
@@ -256,12 +256,12 @@ export function Navbar() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-white/80 transition-colors py-2">
-                  Manufacture et fabrication
+                  Savoir-faire & Fabrication
                 </AccordionTrigger>
                 <AccordionContent className="pl-4 text-gray-600 dark:text-white/80">
-                  <Link href="/methode-de-fonctionnement" className="block py-2 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Méthode de Fonctionnement</Link>
+                  <Link href="/methode-de-fonctionnement" className="block py-2 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Notre approche</Link>
                   <div className="py-2">
-                    <Link href="/domaines-de-competence" className="font-semibold text-gray-800 dark:text-white block hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Domaines de compétence</Link>
+                    <Link href="/domaines-de-competence" className="font-semibold text-gray-800 dark:text-white block hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Expertises</Link>
                     <div className="pl-4 mt-1">
                       <Link href="/creation-conception" className="block py-1 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Création & Conception</Link>
                       <Link href="/fabrication-petite-serie" className="block py-1 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Fabrication de Petite série</Link>
@@ -276,12 +276,12 @@ export function Navbar() {
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-white/80 transition-colors py-2">
-                  Mobilier d'agencement
+                  Agencement & Mobilier
                 </AccordionTrigger>
                 <AccordionContent className="pl-4 text-gray-600 dark:text-white/80">
-                  <Link href="/mobilier-methode-de-fonctionnement" className="block py-2 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Méthode de Fonctionnement</Link>
+                  <Link href="/mobilier-methode-de-fonctionnement" className="block py-2 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Notre approche</Link>
                   <div className="py-2">
-                    <Link href="/mobilier-domaines-de-competence" className="font-semibold text-gray-800 dark:text-white block hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Domaines de compétence</Link>
+                    <Link href="/mobilier-domaines-de-competence" className="font-semibold text-gray-800 dark:text-white block hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Expertises</Link>
                     <div className="pl-4 mt-1">
                       <Link href="/amenagement-industriel" className="block py-1 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Aménagement Industriel</Link>
                       <Link href="/espaces-de-bureau" className="block py-1 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Espaces de Bureau</Link>
@@ -295,15 +295,15 @@ export function Navbar() {
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-white/80 transition-colors py-2">
-                  Prestation de service
+                  Nos services
                 </AccordionTrigger>
                 <AccordionContent className="pl-4 text-gray-600 dark:text-white/80">
-                  <Link href="/planification-dao" className="block px-4 py-2 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Planification & DAO</Link>
-                  <Link href="/livraison-installation" className="block px-4 py-2 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Livraison et Installation (World Wilde)</Link>
+                  <Link href="/planification-dao" className="block px-4 py-2 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Conception & Planification</Link>
+                  <Link href="/livraison-installation" className="block px-4 py-2 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Livraison & Installation (world wide)</Link>
                   <Link href="/demenagement" className="block px-4 py-2 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Déménagement</Link>
                   <Link href="/solutions-stockage" className="block px-4 py-2 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Solutions de stockage</Link>
-                  <Link href="/coaching-formations" className="block px-4 py-2 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Coaching & Formations</Link>
-                  <Link href="/sourcing" className="block px-4 py-2 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Sourcing</Link>
+                  <Link href="/coaching-formations" className="block px-4 py-2 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Conseil & Formation</Link>
+                  <Link href="/sourcing" className="block px-4 py-2 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Sélection & Sourcing</Link>
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -326,7 +326,7 @@ export function Navbar() {
               className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-white/80 transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Media
+              Actualités & Media
             </Link>
 
             <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
