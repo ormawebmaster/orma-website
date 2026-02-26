@@ -17,14 +17,14 @@ const services = [
     icon: Home,
   },
   {
-    title: "Planification & DAO",
+    title: "Conception & Planification",
     description: "De l'idée à la conception, nous vous accompagnons avec des plans détaillés et une gestion de projet rigoureuse. Études techniques, cahiers des charges et suivi complet.",
     link: "/planification-dao",
     image: "/architectural-blueprints-and-drawings.jpg",
     icon: ClipboardList,
   },
   {
-    title: "Livraison et Installation",
+    title: "Livraison & Installation (world wide)",
     description: "Une logistique sans faille, partout dans le monde. Installation professionnelle par nos équipes qualifiées. Service World Wide garanti.",
     link: "/livraison-installation",
     image: "/surveying-equipment-and-construction-site.jpg",
@@ -45,14 +45,14 @@ const services = [
     icon: Warehouse,
   },
   {
-    title: "Coaching & Formations",
+    title: "Conseil & Formation",
     description: "Développez vos compétences avec nos experts. Formations sur mesure pour vos équipes sur l'ergonomie, l'aménagement et l'utilisation optimale de vos espaces.",
     link: "/coaching-formations",
     image: "/modern-interior-architecture-wooden-stairs.jpg",
     icon: GraduationCap,
   },
   {
-    title: "Sourcing",
+    title: "Sélection & Sourcing",
     description: "Nous trouvons pour vous les meilleurs matériaux et fournisseurs au meilleur rapport qualité-prix. Expertise et réseau international à votre service.",
     link: "/sourcing",
     image: "/modern-residential-exterior.jpg",

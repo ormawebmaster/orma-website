@@ -10,13 +10,13 @@ import Link from "next/link"
 
 const services = [
   {
-    title: "Méthode de Fonctionnement",
+    title: "Notre approche",
     description: "Une méthodologie maîtrisée, de l’analyse à la livraison, pour garantir qualité, précision et respect des délais. ",
     link: "/methode-de-fonctionnement",
     image: "/a.webp",
   },
   {
-    title: "Domaines de compétence",
+    title: "Expertises",
     description: "Un éventail complet de compétences allant de la conception à la fabrication, au service de solutions innovantes et sur mesure. ",
     link: "/domaines-de-competence",
     image: "/b.webp",

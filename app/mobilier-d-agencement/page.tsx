@@ -10,13 +10,13 @@ import Link from "next/link"
 
 const services = [
   {
-    title: "Méthode de Fonctionnement",
+    title: "Notre approche",
     description: "Notre processus rigoureux de la conception à la réalisation. Nous accompagnons chaque projet avec une méthodologie éprouvée garantissant qualité et respect des délais.",
     link: "/methode-de-fonctionnement",
     image: "/a.webp",
   },
   {
-    title: "Domaines de compétence",
+    title: "Expertises",
     description: "Nos différents domaines d'expertise : Aménagement Industriel, Espaces de Bureau, Aménagement Privé, Aménagement Public & Collectivités, Acoustique.",
     link: "/domaines-de-competence",
     image: "/b.webp",

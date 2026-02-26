@@ -11,13 +11,13 @@ const expertiseAreas = [
     href: "/manufacture-et-fabrication",
   },
   {
-    title: "Mobilier & Agencement",
+    title: "Agencement & Mobilier",
     description: "Créer des espaces fonctionnels où design et ergonomie se rencontrent. Chaque détail est conçu pour valoriser votre environnement de travail.",
     image: "/b1.jpeg",
     href: "/mobilier-d-agencement",
   },
   {
-    title: "Prestation de Service",
+    title: "Nos services",
     description: "Un accompagnement global, de la conception à la réalisation finale. Expertise, conseil et suivi pour des projets menés en toute sérénité.",
     image: "/cc.webp",
     href: "/prestation-de-service",
@@ -28,7 +28,7 @@ export function Expertise() {
   return (
     <section id="expertise" className="py-20 px-6 md:px-12 lg:px-20 bg-white">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-left mb-4">Nos domaines d'expertise</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-left mb-4">Savoir-faire & Fabrication</h2>
         <p className="text-left text-muted-foreground mb-16 max-w-3xl">
           Depuis plus de 75 ans, ORMA conçoit et réalise des environnements fonctionnels, esthétiques et durables, pensés pour répondre aux exigences des professionnels comme des particuliers.
           <br /><br />
