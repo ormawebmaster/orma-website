@@ -10,9 +10,9 @@ import Link from "next/link"
 import Image from "next/image"
 import { mediaItems } from "@/lib/media-data"
 
-export default function AvantApresNouvelleRequettePage() {
+export default function EquipeEPHJ2025Page() {
     const relatedArticles = mediaItems
-        .filter(item => item.slug !== '/media/avant-apres-nouvelle-moquette')
+        .filter(item => item.slug !== '/media/equipe-ephj-2025')
         .slice(0, 3);
 
     return (
@@ -21,8 +21,8 @@ export default function AvantApresNouvelleRequettePage() {
             <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center">
                 <div className="absolute inset-0">
                     <Image
-                        src="/acoustique-bureau-5.jpg"
-                        alt="Avant Après nouvelle moquette"
+                        src="/ephj-stand-2025.jpg"
+                        alt="Équipe ORMA à l'EPHJ 2025"
                         fill
                         className="object-cover"
                         priority
@@ -36,7 +36,7 @@ export default function AvantApresNouvelleRequettePage() {
                             <span className="font-semibold">Facebook</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-                            Avant ➡️ Après : nouvelle moquette, nouvelle ambiance
+                            📸 Un moment d&apos;équipe capturé à l&apos;EPHJ 2025
                         </h1>
                         <div className="flex items-center gap-6 text-white/80 text-sm">
                             <div className="flex items-center gap-2">
@@ -59,24 +59,29 @@ export default function AvantApresNouvelleRequettePage() {
                         {/* Introduction */}
                         <div>
                             <p className="text-xl text-muted-foreground leading-relaxed font-medium">
-                                Un espace transformé, plus élégant, plus confortable et plus chaleureux ✨
+                                Notre équipe s&apos;est réunie pour immortaliser cette belle aventure au cœur du salon.
                             </p>
 
                             <div className="my-8 p-6 bg-[#F3F4F6] rounded-xl border-l-4 border-[#CC2A3F]">
                                 <p className="text-lg font-semibold text-gray-800 italic">
-                                    &quot;Nouvelle moquette, nouvelle ambiance — la transformation commence par le sol.&quot;
+                                    🔔 Dernier jour aujourd&apos;hui ! Venez nous retrouver au stand S36 pour découvrir nos nouveautés,
+                                    échanger avec nous et clôturer cette édition sur une note inspirante.
                                 </p>
                             </div>
+
+                            <p className="text-muted-foreground leading-relaxed">
+                                🙏 Merci à toutes celles et ceux qui sont déjà passés, vos échanges ont rendu cette édition encore plus enrichissante.
+                            </p>
                         </div>
 
                         {/* Video Section */}
                         <div>
-                            <h2 className="text-2xl font-bold text-foreground mb-6">La vidéo de la transformation</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-6">La vidéo souvenir</h2>
                             <div className="flex justify-center">
                                 <div className="rounded-2xl overflow-hidden shadow-lg bg-black w-full max-w-[400px]">
                                     <div className="relative w-full" style={{ paddingBottom: '177.78%' }}>
                                         <iframe
-                                            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F883496937420730&show_text=false"
+                                            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1227239122238559&show_text=false"
                                             className="absolute top-0 left-0 w-full h-full border-0"
                                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                                             allowFullScreen
@@ -85,13 +90,41 @@ export default function AvantApresNouvelleRequettePage() {
                                 </div>
                             </div>
                             <p className="text-sm text-muted-foreground mt-3 italic text-center">
-                                Vidéo originale publiée sur <a href="https://www.facebook.com/reel/883496937420730" target="_blank" rel="noopener noreferrer" className="text-[#CC2A3F] hover:underline">Facebook</a>
+                                Vidéo originale publiée sur <a href="https://www.facebook.com/reel/1227239122238559" target="_blank" rel="noopener noreferrer" className="text-[#CC2A3F] hover:underline">Facebook</a>
                             </p>
+                        </div>
+
+                        {/* Key Info */}
+                        <div className="bg-[#F3F4F6] rounded-2xl p-8">
+                            <h2 className="text-2xl font-bold text-foreground mb-6">EPHJ 2025 en bref</h2>
+                            <div className="grid md:grid-cols-3 gap-6">
+                                <div className="text-center">
+                                    <div className="w-16 h-16 rounded-full bg-[#CC2A3F]/10 flex items-center justify-center mx-auto mb-4">
+                                        <span className="text-2xl">📍</span>
+                                    </div>
+                                    <h3 className="font-bold mb-2">Stand S36</h3>
+                                    <p className="text-sm text-muted-foreground">Palexpo, Genève</p>
+                                </div>
+                                <div className="text-center">
+                                    <div className="w-16 h-16 rounded-full bg-[#CC2A3F]/10 flex items-center justify-center mx-auto mb-4">
+                                        <span className="text-2xl">⌚</span>
+                                    </div>
+                                    <h3 className="font-bold mb-2">Horlogerie</h3>
+                                    <p className="text-sm text-muted-foreground">Établis & innovation</p>
+                                </div>
+                                <div className="text-center">
+                                    <div className="w-16 h-16 rounded-full bg-[#CC2A3F]/10 flex items-center justify-center mx-auto mb-4">
+                                        <span className="text-2xl">🤝</span>
+                                    </div>
+                                    <h3 className="font-bold mb-2">Team ORMA</h3>
+                                    <p className="text-sm text-muted-foreground">Unis et passionnés</p>
+                                </div>
+                            </div>
                         </div>
 
                         {/* Tags */}
                         <div className="flex flex-wrap gap-2 pt-4">
-                            {["orma", "moquette", "interiordesign"].map(tag => (
+                            {["ormaswiss", "ephj2025", "etabli", "horlogerie", "innovation", "palexpogeneva", "ergonomie", "watchmaking", "TeamOrmaswiss"].map(tag => (
                                 <span key={tag} className="px-4 py-2 bg-[#F3F4F6] text-sm font-medium text-gray-600 rounded-full">
                                     #{tag}
                                 </span>
@@ -102,7 +135,7 @@ export default function AvantApresNouvelleRequettePage() {
                         <div className="border-t pt-8 mt-12">
                             <h2 className="text-2xl font-bold text-foreground mb-4">Contact</h2>
                             <p className="text-muted-foreground leading-relaxed">
-                                Envie de transformer vos espaces ? Contactez-nous pour une étude personnalisée.
+                                Intéressé par nos solutions pour l&apos;horlogerie et la joaillerie ? Contactez-nous.
                             </p>
                             <ul className="list-none space-y-3 mt-6 text-gray-700 font-medium">
                                 <li className="flex items-center gap-3">

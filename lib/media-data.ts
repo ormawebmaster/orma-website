@@ -13,7 +13,17 @@ export interface MediaItem {
 
 export const mediaItems: MediaItem[] = [
     {
-        image: "/acoustique-bureau-1.jpg",
+        image: "/ephj-stand-2025.jpg",
+        title: "📸 Un moment d'équipe capturé à l'EPHJ 2025",
+        description: "Notre équipe s'est réunie pour immortaliser cette belle aventure au cœur du salon EPHJ 2025. Venez nous retrouver au stand S36 !",
+        linkText: "Voir la vidéo",
+        date: "2026-02-26",
+        slug: "/media/equipe-ephj-2025",
+        category: "Facebook",
+        pinned: true,
+    },
+    {
+        image: "/acoustique-bureau-5.jpg",
         title: "Avant ➡️ Après : nouvelle moquette, nouvelle ambiance",
         description: "Un espace transformé, plus élégant, plus confortable et plus chaleureux ✨ #orma #moquette #interiordesign",
         linkText: "Voir la vidéo",
