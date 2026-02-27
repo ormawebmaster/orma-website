@@ -13,6 +13,16 @@ export interface MediaItem {
 
 export const mediaItems: MediaItem[] = [
     {
+        image: "https://img.youtube.com/vi/2_WQ8s_pEgY/maxresdefault.jpg",
+        title: "Une banque d'accueil prête à accueillir 👌",
+        description: "Découvrez la fabrication et l'installation d'une banque d'accueil sur mesure, prête à accueillir vos visiteurs avec style et professionnalisme.",
+        linkText: "Voir la vidéo",
+        date: "2026-02-27",
+        slug: "/media/banque-accueil-prete-a-accueillir",
+        category: "Youtube",
+        pinned: true,
+    },
+    {
         image: "/ephj-stand-2025.jpg",
         title: "📸 Un moment d'équipe capturé à l'EPHJ 2025",
         description: "Notre équipe s'est réunie pour immortaliser cette belle aventure au cœur du salon EPHJ 2025. Venez nous retrouver au stand S36 !",

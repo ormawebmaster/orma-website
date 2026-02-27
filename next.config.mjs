@@ -4,9 +4,9 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    domains: ['images.unsplash.com', 'i.pravatar.cc'],
+    domains: ['images.unsplash.com', 'i.pravatar.cc', 'img.youtube.com'],
   },
- 
+
 }
 
 export default nextConfig
