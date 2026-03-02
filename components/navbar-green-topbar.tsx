@@ -226,7 +226,7 @@ export function NavbarGreenTopBar() {
                                     </DropdownMenuItem>
                                     <DropdownMenuItem asChild>
                                         <Link href="/sourcing" className="block px-4 py-2 hover:bg-[#EAF2F0] rounded-md">
-                                    Sélection & Sourcing
+                                            Sélection & Sourcing
                                         </Link>
                                     </DropdownMenuItem>
                                 </DropdownMenuContent>
@@ -294,7 +294,7 @@ export function NavbarGreenTopBar() {
 
                 {/* Mobile Menu */}
                 {isMenuOpen && (
-                    <div className="lg:hidden mt-4 pb-4">
+                    <div className="lg:hidden mt-4 pb-4 max-h-[70vh] overflow-y-auto">
                         <div className="flex flex-col gap-4">
                             <Accordion type="single" collapsible className="w-full">
                                 <AccordionItem value="item-1">

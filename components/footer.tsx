@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="bg-[#F3F4F6] text-foreground py-16 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}
           <div>
             <Image src="/logo-orma-1948.png" alt="ORMA Logo" width={120} height={50} className="h-12 w-auto mb-4" />

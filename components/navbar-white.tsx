@@ -198,7 +198,7 @@ export function NavbarWhite() {
                                 </DropdownMenuItem>
                                 <DropdownMenuItem asChild>
                                     <Link href="/sourcing" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-white/10 rounded-md">
-                                    Sélection & Sourcing
+                                        Sélection & Sourcing
                                     </Link>
                                 </DropdownMenuItem>
                             </DropdownMenuContent>
@@ -230,7 +230,7 @@ export function NavbarWhite() {
 
             {/* Mobile Menu */}
             {isMenuOpen && (
-                <div className="lg:hidden absolute top-full left-0 right-0 mt-2 mx-4 bg-white dark:bg-[#335c67] shadow-lg rounded-2xl py-4 px-6">
+                <div className="lg:hidden absolute top-full left-0 right-0 mt-2 mx-4 bg-white dark:bg-[#335c67] shadow-lg rounded-2xl py-4 px-6 max-h-[70vh] overflow-y-auto">
                     <div className="flex flex-col gap-4">
                         <Accordion type="single" collapsible className="w-full">
                             <AccordionItem value="item-1">

@@ -6,76 +6,76 @@
 :root {
   /* Updated theme for ORMA website - neutral gray palette */
   --background: #F3F4F6;
-  --foreground: oklch(0.2 0.02 275);
+  --foreground: #1F2937;
   --card: #FFFFFF;
-  --card-foreground: oklch(0.2 0.02 275);
+  --card-foreground: #1F2937;
   --popover: #FFFFFF;
-  --popover-foreground: oklch(0.2 0.02 275);
-  --primary: oklch(0.25 0.05 275);
+  --popover-foreground: #1F2937;
+  --primary: #1E293B;
   --primary-foreground: #FFFFFF;
   --secondary: #E5E7EB;
-  --secondary-foreground: oklch(0.2 0.02 275);
+  --secondary-foreground: #1F2937;
   --muted: #E5E7EB;
-  --muted-foreground: oklch(0.5 0.02 275);
+  --muted-foreground: #6B7280;
   --accent: #E5E7EB;
-  --accent-foreground: oklch(0.2 0.02 275);
-  --destructive: oklch(0.577 0.245 27.325);
+  --accent-foreground: #1F2937;
+  --destructive: #DC2626;
   --destructive-foreground: #FFFFFF;
   --border: #E5E7EB;
   --input: #E5E7EB;
-  --ring: oklch(0.5 0.02 275);
-  --chart-1: oklch(0.25 0.05 275);
-  --chart-2: oklch(0.6 0.08 20);
-  --chart-3: oklch(0.5 0.1 350);
-  --chart-4: oklch(0.7 0.1 120);
-  --chart-5: oklch(0.55 0.08 200);
+  --ring: #6B7280;
+  --chart-1: #1E293B;
+  --chart-2: #DC6B5A;
+  --chart-3: #C04080;
+  --chart-4: #8BC34A;
+  --chart-5: #4A90A4;
   --radius: 0.5rem;
   --sidebar: #FFFFFF;
-  --sidebar-foreground: oklch(0.2 0.02 275);
-  --sidebar-primary: oklch(0.25 0.05 275);
+  --sidebar-foreground: #1F2937;
+  --sidebar-primary: #1E293B;
   --sidebar-primary-foreground: #FFFFFF;
   --sidebar-accent: #E5E7EB;
-  --sidebar-accent-foreground: oklch(0.2 0.02 275);
+  --sidebar-accent-foreground: #1F2937;
   --sidebar-border: #E5E7EB;
-  --sidebar-ring: oklch(0.5 0.02 275);
+  --sidebar-ring: #6B7280;
 }
 
 .dark {
-  --background: oklch(0.15 0.02 275);
-  --foreground: oklch(0.95 0.01 75);
-  --card: oklch(0.18 0.02 275);
-  --card-foreground: oklch(0.95 0.01 75);
+  --background: #1a1d2e;
+  --foreground: #F0EDE8;
+  --card: #1f2233;
+  --card-foreground: #F0EDE8;
   /* Dark mode popover to match navbar color #263F43 */
-  --popover: oklch(0.28 0.03 180);
-  --popover-foreground: oklch(0.95 0.01 75);
+  --popover: #3A5A5E;
+  --popover-foreground: #F0EDE8;
   /* Keep primary button style consistent */
-  --primary: oklch(0.25 0.05 275);
-  --primary-foreground: oklch(0.98 0.005 75);
-  --secondary: oklch(0.25 0.02 275);
-  --secondary-foreground: oklch(0.95 0.01 75);
-  --muted: oklch(0.25 0.02 275);
-  --muted-foreground: oklch(0.65 0.01 75);
-  --accent: oklch(0.25 0.02 275);
-  --accent-foreground: oklch(0.95 0.01 75);
+  --primary: #1E293B;
+  --primary-foreground: #FAFAF8;
+  --secondary: #1E2235;
+  --secondary-foreground: #F0EDE8;
+  --muted: #1E2235;
+  --muted-foreground: #9CA3AF;
+  --accent: #1E2235;
+  --accent-foreground: #F0EDE8;
   /* Keep destructive (red) button style consistent */
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.98 0.005 75);
-  --border: oklch(0.30 0.02 275);
-  --input: oklch(0.25 0.02 275);
-  --ring: oklch(0.5 0.02 275);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.18 0.02 275);
-  --sidebar-foreground: oklch(0.95 0.01 75);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.95 0.01 75);
-  --sidebar-accent: oklch(0.25 0.02 275);
-  --sidebar-accent-foreground: oklch(0.95 0.01 75);
-  --sidebar-border: oklch(0.30 0.02 275);
-  --sidebar-ring: oklch(0.5 0.02 275);
+  --destructive: #DC2626;
+  --destructive-foreground: #FAFAF8;
+  --border: #374151;
+  --input: #1E2235;
+  --ring: #6B7280;
+  --chart-1: #3B82F6;
+  --chart-2: #34D399;
+  --chart-3: #FBBF24;
+  --chart-4: #A78BFA;
+  --chart-5: #F87171;
+  --sidebar: #1f2233;
+  --sidebar-foreground: #F0EDE8;
+  --sidebar-primary: #3B82F6;
+  --sidebar-primary-foreground: #F0EDE8;
+  --sidebar-accent: #1E2235;
+  --sidebar-accent-foreground: #F0EDE8;
+  --sidebar-border: #374151;
+  --sidebar-ring: #6B7280;
 }
 
 @theme inline {

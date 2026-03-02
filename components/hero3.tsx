@@ -89,7 +89,7 @@ export function Hero3() {
                     <div className="absolute bottom-8 md:bottom-12 lg:bottom-16 left-0 right-0 p-6 md:p-10 lg:p-12 pointer-events-none">
                         {/* Title with PP Neue Montreal Style */}
                         <h1
-                            className="text-white mb-2 max-w-full text-4xl sm:text-5xl md:text-[60px] md:leading-[66px] whitespace-normal md:whitespace-nowrap"
+                            className="text-white mb-2 max-w-full text-3xl sm:text-4xl md:text-5xl lg:text-[60px] lg:leading-[66px] whitespace-normal md:whitespace-nowrap"
                             style={{
                                 fontFamily: "'PP Neue Montreal', 'Inter', 'Helvetica Neue', sans-serif",
                                 fontWeight: 500,

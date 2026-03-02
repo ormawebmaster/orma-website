@@ -70,7 +70,7 @@ export function ContactForm() {
         {/* Image and Form Grid */}
         <div className="grid lg:grid-cols-2 gap-8 items-stretch">
           {/* Image */}
-          <div className="min-h-[500px] h-full rounded-lg overflow-hidden border border-border">
+          <div className="hidden md:block min-h-[350px] lg:min-h-[500px] h-full rounded-lg overflow-hidden border border-border">
             <img
               src="/contact-office.jpg"
               alt="ORMA Office Team"
