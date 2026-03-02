@@ -11,19 +11,19 @@ import Link from "next/link"
 const services = [
   {
     title: "Notre approche",
-    description: "Une méthodologie maîtrisée, de l’analyse à la livraison, pour garantir qualité, précision et respect des délais. ",
-    link: "/methode-de-fonctionnement",
+    description: "Une méthodologie maîtrisée, de l’analyse à la livraison, garantissant qualité, précision et respect des délais.",
+    link: "/Notre-approche",
     image: "/a.webp",
   },
   {
     title: "Expertises",
-    description: "Un éventail complet de compétences allant de la conception à la fabrication, au service de solutions innovantes et sur mesure. ",
+    description: "Des compétences complètes, de la conception à la fabrication, au service de solutions innovantes et sur mesure.",
     link: "/domaines-de-competence",
     image: "/b.webp",
   },
   {
-    title: "Solutions Sur Mesure",
-    description: "Des solutions entièrement personnalisées, pensées pour répondre précisément à vos usages, contraintes et objectifs. ",
+    title: "Solutions sur mesure",
+    description: "Des réalisations personnalisées, adaptées précisément à vos usages et contraintes.",
     link: "/solutions-sur-mesure",
     image: "/cc.webp",
   },
@@ -40,13 +40,11 @@ export default function ManufacturePage() {
           {/* Section Header */}
           <div className="text-left mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Notre expertise en fabrication
+              Concevoir, maîtriser, fabriquer.
             </h2>
             <p className="text-muted-foreground max-w-2xl">
-              Nous concevons et fabriquons du mobilier et des agencements sur mesure, alliant précision, qualité et durabilité.
-
-              Chaque pièce est pensée pour répondre parfaitement à vos usages et contraintes.
-
+              Depuis plus de 75 ans, ORMA conçoit et fabrique des solutions durables, précises et adaptées aux environnements les plus exigeants.
+              Notre savoir-faire intégré nous permet de maîtriser chaque étape du projet, de l'analyse des besoins à la production en atelier.
             </p>
           </div>
 

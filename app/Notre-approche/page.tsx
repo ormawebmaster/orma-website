@@ -14,56 +14,56 @@ import {
 } from "@/components/ui/accordion"
 
 const inspirationPoints = [
-    "Écoute attentive de vos idées et envies",
-    "Analyse de vos besoins fonctionnels",
-    "Compréhension de votre vision globale",
-    "Définition des grandes lignes du projet",
+    "Écoute attentive et cadrage initial",
+    "Analyse des besoins fonctionnels",
+    "Compréhension globale des usages",
+    "Définition des orientations stratégiques",
 ];
 
 const solutionPoints = [
-    "Proposition sur mesure par nos designers et ingénieurs",
-    "Équilibre entre esthétique, fonctionnalité et faisabilité",
-    "Premiers contours de votre futur espace ou produit",
-    "Solutions innovantes et durables",
+    "Conception sur mesure",
+    "Équilibre entre design et performance",
+    "Études techniques et validation de faisabilité",
+    "Intégration de solutions durables",
 ];
 
 const concretisationPoints = [
-    "Fabrication en manufacture avec précision",
-    "Assemblage et contrôle qualité rigoureux",
-    "Gestion de la logistique complète",
+    "Fabrication de précision en atelier",
+    "Assemblage et contrôle qualité",
+    "Coordination logistique complète",
     "Installation professionnelle sur site",
 ];
 
 const experimentationPoints = [
-    "Tests et ajustements avant livraison finale",
-    "Collaboration étroite pour affiner chaque détail",
-    "Validation par le client à chaque étape",
-    "Rendu final fidèle à vos attentes",
+    "Tests et ajustements avant livraison",
+    "Validation à chaque étape clé",
+    "Ajustement des finitions",
+    "Conformité aux exigences définies",
 ];
 
 const satisfactionPoints = [
-    "Suivi après installation",
-    "Garantie de fonctionnement optimal",
-    "Résultat dépassant vos attentes",
-    "Relation durable basée sur la confiance",
+    "Suivi post-installation",
+    "Garantie de bon fonctionnement",
+    "Accompagnement durable",
+    "Relation fondée sur la confiance",
 ];
 
 const faqItems = [
     {
-        question: "Combien de temps dure le processus complet ?",
-        answer: "La durée varie selon la complexité du projet, mais notre approche structurée permet d'optimiser chaque étape sans compromis sur la qualité."
+        question: "Quelle est la durée moyenne d'un projet ?",
+        answer: "La durée varie selon la complexité, la taille et le niveau de personnalisation du projet. Un planning précis est défini dès la validation du cahier des charges, avec des étapes claires et maîtrisées jusqu'à la livraison."
     },
     {
-        question: "Peut-on intégrer des modifications en cours de projet ?",
-        answer: "Oui, la phase d'expérimentation est justement prévue pour ajuster les détails avant la finalisation."
+        question: "Des ajustements sont-ils possibles en cours de réalisation ?",
+        answer: "Oui. Notre méthode intègre des points de validation à chaque étape clé. Lorsque cela est techniquement et organisationnellement possible, nous adaptons le projet afin de garantir un résultat parfaitement conforme à vos attentes."
     },
     {
-        question: "Travaillez-vous uniquement sur mesure ?",
-        answer: "Oui, chaque projet ORMA est unique. Nous concevons, fabriquons et installons exclusivement des solutions personnalisées."
+        question: "Travaillez-vous exclusivement sur mesure ?",
+        answer: "Nous concevons majoritairement des solutions sur mesure, adaptées aux besoins spécifiques de chaque client. Cependant, lorsque cela est pertinent, nous pouvons également intégrer des éléments standardisés pour optimiser budget, délais ou cohérence technique."
     },
     {
-        question: "Quelle est la différence entre ORMA et un fabricant classique ?",
-        answer: "Notre différence réside dans notre approche intégrée : nous maîtrisons à la fois la conception, la fabrication et la mise en œuvre, garantissant une cohérence totale."
+        question: "Quelle est la valeur ajoutée d'ORMA par rapport à un fabricant classique ?",
+        answer: "ORMA ne se limite pas à la fabrication. Nous maîtrisons l'ensemble de la chaîne : analyse, conception, ingénierie, production, logistique et installation. Cette approche intégrée garantit cohérence, précision et qualité à chaque étape du projet."
     }
 ];
 
@@ -82,14 +82,14 @@ export default function MethodePage() {
                 </div>
                 <NavbarGreenTopBar />
                 <div className="relative z-10 px-6 md:px-12 lg:px-20 w-full">
-                  <div className="max-w-7xl mx-auto">
-                      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-                          Méthode de Fonctionnement
-                      </h1>
-                      <p className="text-lg md:text-xl text-white/90 max-w-3xl">
-                          Un processus rigoureux, structuré et éprouvé, garantissant la qualité, la précision et la durabilité de chaque projet.
-                      </p>
-                  </div>
+                    <div className="max-w-7xl mx-auto">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+                            Notre approche
+                        </h1>
+                        <p className="text-lg md:text-xl text-white/90 max-w-3xl">
+                            Un processus structuré et maîtrisé, garantissant précision, qualité et durabilité.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -97,10 +97,10 @@ export default function MethodePage() {
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
                 <div className="max-w-4xl mx-auto">
                     <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                        Chez <strong className="text-foreground">ORMA Swiss SA</strong>, notre méthode de fonctionnement repose sur un processus rigoureux, structuré et éprouvé.
+                        Chez <strong className="text-foreground">ORMA</strong>, notre méthode repose sur un processus clair, structuré et éprouvé.
                     </p>
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                        Chaque étape est pensée pour transformer une idée en une réalisation concrète, <strong className="text-foreground">sur mesure et fidèle à votre vision</strong>.
+                        Chaque étape est pensée pour transformer votre vision en une réalisation concrète, <strong className="text-foreground">fidèle et maîtrisée</strong>.
                     </p>
                 </div>
             </section>
@@ -118,7 +118,7 @@ export default function MethodePage() {
                                 Votre Inspiration
                             </h2>
                             <p className="text-muted-foreground mb-6">
-                                Tout commence par vous. Nous écoutons vos idées, vos envies, vos besoins. Cette phase d'échange et de réflexion est essentielle pour comprendre votre vision et définir les grandes lignes du projet.
+                                Tout commence par l'écoute. Nous analysons vos idées, vos besoins et vos contraintes afin de définir une base solide pour le projet.
                             </p>
                             <h3 className="text-xl font-semibold text-foreground mb-4">Ce que nous faisons</h3>
                             <ul className="space-y-3 mb-6">
@@ -130,12 +130,12 @@ export default function MethodePage() {
                                 ))}
                             </ul>
                             <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">
-                                🎯 Transformer vos aspirations en un concept clair et réalisable.
+                                🎯 Transformer votre vision en un concept clair et réalisable.
                             </p>
                         </div>
                         <div className="relative">
                             <img
-                                src="/a.webp"
+                                src="/etape-01-inspiration.png"
                                 alt="Votre Inspiration"
                                 className="w-full h-auto rounded-2xl shadow-xl"
                             />
@@ -164,7 +164,7 @@ export default function MethodePage() {
                                 Notre Solution
                             </h2>
                             <p className="text-muted-foreground mb-6">
-                                À partir de votre inspiration, nos designers et ingénieurs élaborent une proposition sur mesure, alliant esthétique, fonctionnalité et faisabilité. Nous dessinons les premiers contours de votre futur espace ou produit.
+                                À partir de votre vision, nos équipes conçoivent une proposition sur mesure alliant esthétique, fonctionnalité et faisabilité technique.
                             </p>
                             <h3 className="text-xl font-semibold text-foreground mb-4">Notre approche</h3>
                             <ul className="space-y-3 mb-6">
@@ -176,7 +176,7 @@ export default function MethodePage() {
                                 ))}
                             </ul>
                             <p className="text-sm text-muted-foreground italic border-l-4 border-red-600 pl-4">
-                                🎯 Concevoir une solution équilibrée, innovante et durable.
+                                🎯 Concevoir une solution cohérente, innovante et durable.
                             </p>
                         </div>
                     </div>
@@ -196,7 +196,7 @@ export default function MethodePage() {
                                 Notre Concrétisation
                             </h2>
                             <p className="text-muted-foreground mb-6">
-                                Une fois la solution validée, nous passons à la phase de réalisation. Dans notre manufacture, chaque pièce est fabriquée, assemblée et contrôlée avec précision. Nos équipes assurent également la transformation, la logistique et l'installation sur site.
+                                Une fois la solution validée, nous entrons en phase de fabrication. Chaque pièce est produite, assemblée et contrôlée avec exigence dans notre manufacture.
                             </p>
                             <h3 className="text-xl font-semibold text-foreground mb-4">Notre processus</h3>
                             <ul className="space-y-3 mb-6">
@@ -208,12 +208,12 @@ export default function MethodePage() {
                                 ))}
                             </ul>
                             <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">
-                                🎯 Donner vie à votre projet avec maîtrise et excellence.
+                                🎯 Donner vie à votre projet avec maîtrise et exigence.
                             </p>
                         </div>
                         <div className="relative">
                             <img
-                                src="/cc.webp"
+                                src="/etape-03-concretisation.png"
                                 alt="Notre Concrétisation"
                                 className="w-full h-auto rounded-2xl shadow-xl"
                             />
@@ -228,7 +228,7 @@ export default function MethodePage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="order-2 lg:order-1">
                             <img
-                                src="/architectural-blueprints-and-drawings.jpg"
+                                src="/etape-04-experimentation.png"
                                 alt="Votre Expérimentation"
                                 className="w-full h-auto rounded-2xl shadow-xl"
                             />
@@ -242,7 +242,7 @@ export default function MethodePage() {
                                 Votre Expérimentation
                             </h2>
                             <p className="text-muted-foreground mb-6">
-                                Avant la livraison finale, nous vous invitons à tester, ajuster et valider les éléments du projet. Cette étape collaborative nous permet d'affiner chaque détail et de garantir que le rendu final répond parfaitement à vos attentes.
+                                Avant la livraison finale, nous procédons aux ajustements nécessaires avec vous afin de garantir une parfaite adéquation avec vos attentes.
                             </p>
                             <h3 className="text-xl font-semibold text-foreground mb-4">Ce que nous garantissons</h3>
                             <ul className="space-y-3 mb-6">
@@ -254,7 +254,7 @@ export default function MethodePage() {
                                 ))}
                             </ul>
                             <p className="text-sm text-muted-foreground italic border-l-4 border-red-600 pl-4">
-                                🎯 Créer une expérience sur mesure, fidèle à votre identité.
+                                🎯 Garantir un résultat fidèle à votre vision.
                             </p>
                         </div>
                     </div>
@@ -274,7 +274,7 @@ export default function MethodePage() {
                                 Votre Satisfaction
                             </h2>
                             <p className="text-muted-foreground mb-6">
-                                Votre satisfaction est notre plus belle récompense. Nous assurons un suivi après installation pour nous assurer que tout fonctionne parfaitement et que le résultat final dépasse vos attentes.
+                                Votre satisfaction est au cœur de notre engagement. Nous assurons un suivi après installation afin de garantir performance et pérennité.
                             </p>
                             <h3 className="text-xl font-semibold text-foreground mb-4">Nos engagements</h3>
                             <ul className="space-y-3 mb-6">
@@ -286,7 +286,7 @@ export default function MethodePage() {
                                 ))}
                             </ul>
                             <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">
-                                🎯 Établir une relation durable, fondée sur la confiance et la qualité.
+                                🎯 Construire une relation durable, fondée sur la qualité.
                             </p>
                         </div>
                         <div className="relative">
@@ -305,7 +305,7 @@ export default function MethodePage() {
                 <div className="max-w-4xl mx-auto">
                     <div className="text-left mb-12">
                         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                            FAQ – Méthode de Fonctionnement
+                            FAQ – Notre approche
                         </h2>
                     </div>
 

@@ -12,7 +12,7 @@ const services = [
   {
     title: "Notre approche",
     description: "Notre processus rigoureux de la conception à la réalisation. Nous accompagnons chaque projet avec une méthodologie éprouvée garantissant qualité et respect des délais.",
-    link: "/methode-de-fonctionnement",
+    link: "/Notre-approche",
     image: "/a.webp",
   },
   {

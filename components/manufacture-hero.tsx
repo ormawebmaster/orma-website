@@ -19,7 +19,7 @@ export function ManufactureHero() {
       {/* Content */}
       <div className="relative z-10 px-6 md:px-12 lg:px-20 w-full">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Manufacture et fabrication</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Savoir-faire & Fabrication</h1>
           <p className="text-lg md:text-xl text-white/90 max-w-3xl">
             L’excellence du sur-mesure, au cœur de notre savoir-faire.
           </p>

@@ -49,7 +49,7 @@ export function NavbarWhite() {
                             </DropdownMenuTrigger>
                             <DropdownMenuContent className="bg-white dark:bg-[#335c67] text-gray-800 dark:text-white p-2 rounded-md shadow-lg">
                                 <DropdownMenuItem asChild>
-                                    <Link href="/methode-de-fonctionnement" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-white/10 rounded-md">
+                                    <Link href="/Notre-approche" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-white/10 rounded-md">
                                         Notre approche
                                     </Link>
                                 </DropdownMenuItem>
@@ -238,7 +238,7 @@ export function NavbarWhite() {
                                     Savoir-faire & Fabrication
                                 </AccordionTrigger>
                                 <AccordionContent className="pl-4 text-gray-600">
-                                    <Link href="/methode-de-fonctionnement" className="block py-2 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Notre approche</Link>
+                                    <Link href="/Notre-approche" className="block py-2 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Notre approche</Link>
                                     <div className="py-2">
                                         <Link href="/domaines-de-competence" className="font-semibold text-gray-800 block hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Expertises</Link>
                                         <div className="pl-4 mt-1">
