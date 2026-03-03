@@ -22,7 +22,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/manufacture-et-fabrication" className="hover:underline text-muted-foreground hover:text-foreground">
+                <Link href="/savoir-faire-et-fabrication" className="hover:underline text-muted-foreground hover:text-foreground">
                   Manufacture et fabrication
                 </Link>
               </li>

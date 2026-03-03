@@ -6,7 +6,7 @@ export function ManufactureHero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/a.jpg"
+          src="/hero-savoir-faire.png"
           alt="Manufacture Background"
           className="w-full h-full object-cover"
         />

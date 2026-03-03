@@ -18,7 +18,7 @@ const services = [
   {
     title: "Expertises",
     description: "Nos différents domaines d'expertise : Aménagement Industriel, Espaces de Bureau, Aménagement Privé, Aménagement Public & Collectivités, Acoustique.",
-    link: "/domaines-de-competence",
+    link: "/expertises",
     image: "/b.webp",
   },
   {

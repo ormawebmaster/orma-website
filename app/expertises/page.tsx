@@ -61,7 +61,7 @@ export default function DomainesDeCompetencePage() {
                 <div className="absolute inset-0">
                     <img
                         src="/a.jpg"
-                        alt="Domaines de Compétence"
+                        alt="Expertises"
                         className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-primary/40" />
@@ -70,7 +70,7 @@ export default function DomainesDeCompetencePage() {
                 <div className="relative z-10 px-6 md:px-12 lg:px-20 w-full">
                     <div className="max-w-7xl mx-auto">
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-                            Domaines de Compétence
+                            Expertises
                         </h1>
                         <p className="text-lg md:text-xl text-white/90 max-w-3xl">
                             Six pôles d'expertise au service de vos projets les plus ambitieux
@@ -81,8 +81,8 @@ export default function DomainesDeCompetencePage() {
 
             {/* Introduction */}
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
-                <div className="max-w-4xl">
-                    <p className="text-lg text-muted-foreground leading-relaxed">
+                <div className="max-w-7xl mx-auto">
+                    <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
                         Chez ORMA, notre savoir-faire se déploie à travers six domaines de compétence complémentaires.
                         Chacun reflète notre engagement envers l'excellence, l'innovation et la qualité.
                         De la création à la fabrication, nous maîtrisons l'ensemble de la chaîne de valeur.
@@ -144,7 +144,7 @@ export default function DomainesDeCompetencePage() {
 
             {/* Back to Manufacture */}
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
-                <div className="max-w-4xl">
+                <div className="max-w-7xl mx-auto">
                     <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
                         Une approche intégrée
                     </h2>

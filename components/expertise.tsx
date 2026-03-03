@@ -8,7 +8,7 @@ const expertiseAreas = [
     title: "Manufacture & Fabrication",
     description: "Donner vie à vos projets grâce à une fabrication suisse précise et maîtrisée. Des solutions sur mesure, pensées pour la performance et la durabilité.",
     image: "/a1.jpg",
-    href: "/manufacture-et-fabrication",
+    href: "/savoir-faire-et-fabrication",
   },
   {
     title: "Agencement & Mobilier",

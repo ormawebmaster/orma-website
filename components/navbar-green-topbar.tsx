@@ -66,7 +66,7 @@ export function NavbarGreenTopBar() {
                         <div onMouseEnter={() => setManufactureMenuOpen(true)} onMouseLeave={() => setManufactureMenuOpen(false)}>
                             <DropdownMenu open={manufactureMenuOpen} onOpenChange={setManufactureMenuOpen}>
                                 <DropdownMenuTrigger asChild>
-                                    <Link href="/manufacture-et-fabrication" className="flex items-center gap-1 text-gray-800 hover:text-[#CC2A3F] transition-colors text-sm font-medium focus:outline-none">
+                                    <Link href="/savoir-faire-et-fabrication" className="flex items-center gap-1 text-gray-800 hover:text-[#CC2A3F] transition-colors text-sm font-medium focus:outline-none">
                                         Savoir-faire & Fabrication <ChevronDown className="w-3.5 h-3.5" />
                                     </Link>
                                 </DropdownMenuTrigger>
@@ -78,7 +78,7 @@ export function NavbarGreenTopBar() {
                                     </DropdownMenuItem>
                                     <DropdownMenuSub>
                                         <DropdownMenuSubTrigger className="px-4 py-2 hover:bg-[#EAF2F0] rounded-md cursor-pointer">
-                                            <Link href="/domaines-de-competence" className="flex-1">
+                                            <Link href="/expertises" className="flex-1">
                                                 Expertises
                                             </Link>
                                         </DropdownMenuSubTrigger>
@@ -302,10 +302,10 @@ export function NavbarGreenTopBar() {
                                         Savoir-faire & Fabrication
                                     </AccordionTrigger>
                                     <AccordionContent className="pl-4 text-gray-600">
-                                        <Link href="/manufacture-et-fabrication" className="block py-2 font-bold text-[#CC2A3F] hover:text-[#b02536]" onClick={() => setIsMenuOpen(false)}>Tout voir Savoir-faire & Fabrication</Link>
+                                        <Link href="/savoir-faire-et-fabrication" className="block py-2 font-bold text-[#CC2A3F] hover:text-[#b02536]" onClick={() => setIsMenuOpen(false)}>Tout voir Savoir-faire & Fabrication</Link>
                                         <Link href="/Notre-approche" className="block py-2 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Notre approche</Link>
                                         <div className="py-2">
-                                            <Link href="/domaines-de-competence" className="font-semibold text-gray-800 block hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Expertises</Link>
+                                            <Link href="/expertises" className="font-semibold text-gray-800 block hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Expertises</Link>
                                             <div className="pl-4 mt-1">
                                                 <Link href="/creation-conception" className="block py-1 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Création & Conception</Link>
                                                 <Link href="/fabrication-petite-serie" className="block py-1 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Fabrication de Petite série</Link>

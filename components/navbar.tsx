@@ -43,7 +43,7 @@ export function Navbar() {
           <div onMouseEnter={() => setManufactureMenuOpen(true)} onMouseLeave={() => setManufactureMenuOpen(false)}>
             <DropdownMenu open={manufactureMenuOpen} onOpenChange={setManufactureMenuOpen}>
               <DropdownMenuTrigger asChild>
-                <Link href="/manufacture-et-fabrication" className="flex items-center gap-1 text-gray-700 dark:text-white hover:!text-red-600 dark:hover:!text-red-500 data-[state=open]:!text-red-600 transition-colors text-sm focus:outline-none">
+                <Link href="/savoir-faire-et-fabrication" className="flex items-center gap-1 text-gray-700 dark:text-white hover:!text-red-600 dark:hover:!text-red-500 data-[state=open]:!text-red-600 transition-colors text-sm focus:outline-none">
                   Savoir-faire & Fabrication <ChevronDown className="w-4 h-4" />
                 </Link>
               </DropdownMenuTrigger>
@@ -55,7 +55,7 @@ export function Navbar() {
                 </DropdownMenuItem>
                 <DropdownMenuSub>
                   <DropdownMenuSubTrigger className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-white/10 rounded-md cursor-pointer">
-                    <Link href="/domaines-de-competence" className="flex-1">
+                    <Link href="/expertises" className="flex-1">
                       Expertises
                     </Link>
                   </DropdownMenuSubTrigger>
@@ -261,7 +261,7 @@ export function Navbar() {
                 <AccordionContent className="pl-4 text-gray-600 dark:text-white/80">
                   <Link href="/Notre-approche" className="block py-2 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Notre approche</Link>
                   <div className="py-2">
-                    <Link href="/domaines-de-competence" className="font-semibold text-gray-800 dark:text-white block hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Expertises</Link>
+                    <Link href="/expertises" className="font-semibold text-gray-800 dark:text-white block hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Expertises</Link>
                     <div className="pl-4 mt-1">
                       <Link href="/creation-conception" className="block py-1 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Création & Conception</Link>
                       <Link href="/fabrication-petite-serie" className="block py-1 hover:text-gray-900 dark:hover:text-white" onClick={() => setIsMenuOpen(false)}>Fabrication de Petite série</Link>

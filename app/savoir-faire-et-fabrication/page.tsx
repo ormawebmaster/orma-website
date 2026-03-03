@@ -18,7 +18,7 @@ const services = [
   {
     title: "Expertises",
     description: "Des compétences complètes, de la conception à la fabrication, au service de solutions innovantes et sur mesure.",
-    link: "/domaines-de-competence",
+    link: "/expertises",
     image: "/b.webp",
   },
   {
