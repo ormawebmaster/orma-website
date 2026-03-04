@@ -134,7 +134,7 @@ export default function TechniquesSublimationPage() {
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 lg:order-1 aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/sublimation-haute-precision.png" alt="Sublimation" className="w-full h-full object-cover" /></div>
+                        <div className="order-2 lg:order-1 aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/durabilite-maintenance.jpg" alt="Sublimation" className="w-full h-full object-cover" /></div>
                         <div className="order-1 lg:order-2">
                             <div className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full mb-4">
                                 <Palette className="w-5 h-5" /><span className="font-semibold">Sublimation</span>
@@ -166,7 +166,7 @@ export default function TechniquesSublimationPage() {
                             </ul>
                             <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">Polyvalence maîtrisée.</p>
                         </div>
-                        <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/supports-compatibles.jpg" alt="Supports" className="w-full h-full object-cover" /></div>
+                        <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/sublimation-haute-precision.png" alt="Supports" className="w-full h-full object-cover" /></div>
                     </div>
                 </div>
             </section>
@@ -206,7 +206,7 @@ export default function TechniquesSublimationPage() {
                             </ul>
                             <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">Esthétique durable et technique maîtrisée.</p>
                         </div>
-                        <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/durabilite-maintenance.jpg" alt="Durabilité" className="w-full h-full object-cover" /></div>
+                        <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/supports-compatibles.jpg" alt="Durabilité" className="w-full h-full object-cover" /></div>
                     </div>
                 </div>
             </section>

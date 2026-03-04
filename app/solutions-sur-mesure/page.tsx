@@ -97,7 +97,7 @@ export default function SolutionsSurMesurePage() {
             <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center">
                 <div className="absolute inset-0">
                     <img
-                        src="/solutions-sur-mesure-hero.jpg"
+                        src="/modifications-adaptations.jpg"
                         alt="Solutions Sur Mesure"
                         className="w-full h-full object-cover"
                     />
@@ -156,7 +156,7 @@ export default function SolutionsSurMesurePage() {
                         </div>
                         <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
                             <img
-                                src="/mobilier-technique-sur-mesure.jpg"
+                                src="/prototypage-rapide.jpg"
                                 alt="Mobilier Technique sur mesure"
                                 className="w-full h-full object-cover"
                             />
@@ -171,7 +171,7 @@ export default function SolutionsSurMesurePage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="order-2 lg:order-1">
                             <img
-                                src="/equipements-specialises.jpg"
+                                src="/mobilier-technique-sur-mesure.jpg"
                                 alt="Équipements Spécialisés"
                                 className="w-full h-full object-cover"
                             />
@@ -226,7 +226,7 @@ export default function SolutionsSurMesurePage() {
                         </div>
                         <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
                             <img
-                                src="/prototypage-rapide.jpg"
+                                src="/equipements-specialises.jpg"
                                 alt="Prototypage rapide"
                                 className="w-full h-full object-cover"
                             />
@@ -241,7 +241,7 @@ export default function SolutionsSurMesurePage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="order-2 lg:order-1">
                             <img
-                                src="/modifications-adaptations.jpg"
+                                src="/solutions-sur-mesure-hero.jpg"
                                 alt="Modifications et Adaptations"
                                 className="w-full h-full object-cover"
                             />

@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react"
 
 const expertiseAreas = [
   {
-    title: "Manufacture & Fabrication",
+    title: "Savoir-faire & Fabrication",
     description: "Donner vie à vos projets grâce à une fabrication suisse précise et maîtrisée. Des solutions sur mesure, pensées pour la performance et la durabilité.",
     image: "/a1.jpg",
     href: "/savoir-faire-et-fabrication",

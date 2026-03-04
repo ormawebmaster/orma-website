@@ -127,7 +127,7 @@ export function MethodologyDiagramCards() {
             <div className="relative z-10 max-w-6xl mx-auto">
                 {/* Titre de la section */}
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-left mb-12 text-gray-900">
-                    Notre Méthode de Fonctionnement
+                    Notre Approche
                 </h2>
 
                 {/* Container principal - forme ovale HORIZONTALE */}
