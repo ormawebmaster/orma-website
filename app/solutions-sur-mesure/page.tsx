@@ -27,10 +27,42 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion"
 
+const mobilierPoints = [
+    "Établis techniques",
+    "Mobilier de laboratoire",
+    "Postes de travail spécialisés",
+    "Mobilier industriel sur mesure",
+    "Intégration d'équipements techniques",
+];
+
+const equipementsPoints = [
+    "Équipements industriels spécifiques",
+    "Postes techniques spécialisés",
+    "Mobilier pour environnements contrôlés",
+    "Solutions pour laboratoires",
+    "Intégration d'appareils et machines",
+];
+
+const prototypagePoints = [
+    "Étude technique et validation",
+    "Conception et modélisation",
+    "Prototype fonctionnel",
+    "Ajustements et optimisation",
+    "Validation avant production",
+];
+
+const modificationsPoints = [
+    "Modernisation d'équipements",
+    "Adaptation de mobilier existant",
+    "Optimisation ergonomique",
+    "Intégration de nouvelles technologies",
+    "Réorganisation d'espaces de travail",
+];
+
 const pourquoiOrma = [
     { text: "Fabrication 100 % suisse, alliant rigueur et excellence", icon: Factory },
     { text: "Équipe pluridisciplinaire : designers, techniciens, ingénieurs", icon: Brain },
-    { text: "Maîtrise complète du processus – de la conception au montage", icon: Cog },
+    { text: "Maîtrise complète du processus : étude, fabrication et installation", icon: Cog },
     { text: "Matériaux durables et solutions éco-responsables", icon: Leaf },
     { text: "Accompagnement sur mesure à chaque étape du projet", icon: Handshake },
 ];
@@ -38,23 +70,23 @@ const pourquoiOrma = [
 const faqItems = [
     {
         question: "Travaillez-vous uniquement pour les entreprises industrielles ?",
-        answer: "Non, nos solutions sur mesure s'adressent aussi aux secteurs tertiaires, médicaux, hôteliers et publics.",
+        answer: "Non. Nous accompagnons aussi bien les entreprises industrielles que les laboratoires, bureaux, commerces ou projets architecturaux.",
     },
     {
         question: "Peut-on personnaliser les matériaux et finitions ?",
-        answer: "Oui, nous offrons un large choix de matériaux, couleurs et textures selon vos besoins techniques et esthétiques.",
+        answer: "Oui. Chaque projet est entièrement personnalisable : matériaux, dimensions, finitions et intégration technique.",
     },
     {
         question: "Réalisez-vous des prototypes avant production ?",
-        answer: "Oui, notre service de prototypage rapide vous permet de valider chaque détail avant la fabrication.",
+        answer: "Oui. Le prototypage fait partie intégrante de notre processus afin de valider les solutions techniques avant fabrication.",
     },
     {
-        question: "Quels délais prévoir pour une solution sur mesure ?",
-        answer: "En moyenne entre 6 et 10 semaines, selon la complexité du projet.",
+        question: "Quels sont les délais pour une solution sur mesure ?",
+        answer: "Les délais varient selon la complexité du projet. Après étude, nous établissons un planning précis.",
     },
     {
-        question: "Offrez-vous un service d'installation sur site ?",
-        answer: "Oui, notre équipe assure la livraison, l'installation et le suivi complet en Suisse et en Europe.",
+        question: "Proposez-vous l'installation sur site ?",
+        answer: "Oui. Nos équipes assurent également la livraison et l'installation professionnelle des équipements.",
     },
 ];
 
@@ -65,7 +97,7 @@ export default function SolutionsSurMesurePage() {
             <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center">
                 <div className="absolute inset-0">
                     <img
-                        src="/a.jpg"
+                        src="/solutions-sur-mesure-hero.jpg"
                         alt="Solutions Sur Mesure"
                         className="w-full h-full object-cover"
                     />
@@ -73,14 +105,14 @@ export default function SolutionsSurMesurePage() {
                 </div>
                 <NavbarGreenTopBar />
                 <div className="relative z-10 px-6 md:px-12 lg:px-20 w-full">
-                  <div className="max-w-7xl mx-auto">
-                      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-                          Solutions Sur Mesure
-                      </h1>
-                      <p className="text-lg md:text-xl text-white/90 max-w-3xl">
-                          Une approche personnalisée pour chaque projet
-                      </p>
-                  </div>
+                    <div className="max-w-7xl mx-auto">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+                            Solutions Sur Mesure
+                        </h1>
+                        <p className="text-lg md:text-xl text-white/90 max-w-3xl">
+                            Une approche personnalisée pour chaque projet.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -88,16 +120,11 @@ export default function SolutionsSurMesurePage() {
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
                 <div className="max-w-4xl mx-auto">
                     <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                        Chaque projet est unique. Nos solutions sur mesure en manufacture s'adaptent parfaitement
-                        à vos besoins spécifiques et contraintes techniques.
-                    </p>
-                    <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                        Grâce à notre <strong className="text-foreground">savoir-faire suisse</strong> et à notre maîtrise complète
-                        du processus de fabrication, nous créons des espaces, équipements et mobiliers techniques
-                        parfaitement intégrés à vos environnements professionnels.
+                        Chaque projet est unique.
+                        Nous concevons des solutions techniques et mobiliers sur mesure parfaitement adaptés à votre environnement professionnel.
                     </p>
                     <p className="text-lg font-semibold text-red-600">
-                        🎯 Objectif : offrir des solutions précises, durables et adaptées à votre réalité de terrain.
+                        🎯 Objectif : proposer des solutions précises, durables et parfaitement intégrées à vos besoins.
                     </p>
                 </div>
             </section>
@@ -112,25 +139,26 @@ export default function SolutionsSurMesurePage() {
                                 <span className="font-semibold">Sur Mesure</span>
                             </div>
                             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                                Mobilier Technique
+                                Mobilier Technique Sur Mesure
                             </h2>
                             <p className="text-muted-foreground mb-6">
-                                Conception et fabrication de mobilier technique sur mesure pour les environnements
-                                industriels, laboratoires ou espaces de production.
+                                Nous concevons et fabriquons du mobilier technique sur mesure pour les environnements
+                                industriels, laboratoires et espaces professionnels exigeants.
+                                Chaque meuble est pensé pour optimiser les flux de travail, améliorer l'ergonomie et garantir une durabilité maximale.
                             </p>
-                            <p className="text-muted-foreground mb-6">
-                                Chaque meuble est pensé pour faciliter vos processus et améliorer l'ergonomie
-                                de vos postes de travail.
-                            </p>
+                            <h3 className="text-xl font-semibold text-foreground mb-4">Nos réalisations</h3>
+                            <ul className="space-y-3 mb-6">
+                                {mobilierPoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
+                            </ul>
                             <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">
-                                🛠️ Matériaux résistants, design fonctionnel et fabrication suisse de précision.
+                                Matériaux résistants, design fonctionnel et fabrication suisse de précision.
                             </p>
                         </div>
-                        <div className="relative">
+                        <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
                             <img
-                                src="/b.webp"
+                                src="/mobilier-technique-sur-mesure.jpg"
                                 alt="Mobilier Technique sur mesure"
-                                className="w-full h-auto rounded-2xl shadow-xl"
+                                className="w-full h-full object-cover"
                             />
                         </div>
                     </div>
@@ -143,9 +171,9 @@ export default function SolutionsSurMesurePage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="order-2 lg:order-1">
                             <img
-                                src="/cc.webp"
+                                src="/equipements-specialises.jpg"
                                 alt="Équipements Spécialisés"
-                                className="w-full h-auto rounded-2xl shadow-xl"
+                                className="w-full h-full object-cover"
                             />
                         </div>
                         <div className="order-1 lg:order-2">
@@ -157,15 +185,15 @@ export default function SolutionsSurMesurePage() {
                                 Équipements Spécialisés
                             </h2>
                             <p className="text-muted-foreground mb-6">
-                                Développement d'équipements professionnels sur mesure, conçus selon vos exigences
-                                d'usage et vos contraintes techniques.
+                                Nous développons des équipements professionnels sur mesure conçus pour répondre à des contraintes techniques spécifiques.
+                                Qu'il s'agisse de l'industrie, du médical ou de la recherche, nos solutions s'adaptent aux exigences de chaque environnement.
                             </p>
-                            <p className="text-muted-foreground mb-6">
-                                Que ce soit pour l'industrie, le médical ou la recherche, nous adaptons
-                                nos solutions à vos process spécifiques.
-                            </p>
+                            <h3 className="text-xl font-semibold text-foreground mb-4">Applications</h3>
+                            <ul className="space-y-3 mb-6">
+                                {equipementsPoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
+                            </ul>
                             <p className="text-sm text-muted-foreground italic border-l-4 border-red-600 pl-4">
-                                ⚙️ Une ingénierie de précision au service de vos performances.
+                                Une ingénierie de précision au service de la performance.
                             </p>
                         </div>
                     </div>
@@ -185,22 +213,22 @@ export default function SolutionsSurMesurePage() {
                                 Prototypage Rapide
                             </h2>
                             <p className="text-muted-foreground mb-6">
-                                Nous réalisons des prototypes fonctionnels pour valider vos concepts
-                                avant la mise en production.
+                                Nous réalisons des prototypes fonctionnels afin de valider les concepts avant la mise en production.
+                                Cette étape garantit la faisabilité technique et la conformité du projet avant fabrication finale.
                             </p>
-                            <p className="text-muted-foreground mb-6">
-                                Cette étape garantit la fiabilité et la conformité de chaque projet
-                                avant fabrication définitive.
-                            </p>
+                            <h3 className="text-xl font-semibold text-foreground mb-4">Étapes</h3>
+                            <ul className="space-y-3 mb-6">
+                                {prototypagePoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
+                            </ul>
                             <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">
-                                🔬 De l'idée à la réalité, en toute maîtrise.
+                                De l'idée à la réalité, en toute maîtrise.
                             </p>
                         </div>
-                        <div className="relative">
+                        <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
                             <img
-                                src="/architectural-blueprints-and-drawings.jpg"
+                                src="/prototypage-rapide.jpg"
                                 alt="Prototypage rapide"
-                                className="w-full h-auto rounded-2xl shadow-xl"
+                                className="w-full h-full object-cover"
                             />
                         </div>
                     </div>
@@ -213,9 +241,9 @@ export default function SolutionsSurMesurePage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="order-2 lg:order-1">
                             <img
-                                src="/traditional-workshop-renovation.jpg"
+                                src="/modifications-adaptations.jpg"
                                 alt="Modifications et Adaptations"
-                                className="w-full h-auto rounded-2xl shadow-xl"
+                                className="w-full h-full object-cover"
                             />
                         </div>
                         <div className="order-1 lg:order-2">
@@ -227,14 +255,15 @@ export default function SolutionsSurMesurePage() {
                                 Modifications & Adaptations
                             </h2>
                             <p className="text-muted-foreground mb-6">
-                                Besoin d'adapter ou de moderniser un mobilier existant ?
+                                Vous disposez déjà d'une installation existante ?
+                                Nous proposons des services de modification et d'adaptation pour améliorer ou transformer vos équipements selon vos nouveaux besoins.
                             </p>
-                            <p className="text-muted-foreground mb-6">
-                                Nous proposons un service de revalorisation et d'adaptation sur mesure
-                                de vos installations actuelles, selon vos nouvelles exigences ou contraintes d'espace.
-                            </p>
+                            <h3 className="text-xl font-semibold text-foreground mb-4">Services proposés</h3>
+                            <ul className="space-y-3 mb-6">
+                                {modificationsPoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
+                            </ul>
                             <p className="text-sm text-muted-foreground italic border-l-4 border-red-600 pl-4">
-                                ♻️ Une démarche durable pour prolonger la vie de vos équipements.
+                                Une évolution durable pour prolonger la vie de vos équipements.
                             </p>
                         </div>
                     </div>
@@ -262,14 +291,14 @@ export default function SolutionsSurMesurePage() {
                                 ))}
                             </ul>
                             <p className="text-lg font-semibold text-red-600">
-                                Notre force : combiner la précision industrielle et la créativité du design suisse.
+                                🔴 Notre force : combiner la précision industrielle et la créativité du design suisse.
                             </p>
                         </div>
-                        <div className="relative">
+                        <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
                             <img
                                 src="/modern-executive-office.jpg"
                                 alt="Excellence ORMA Swiss SA"
-                                className="w-full h-auto rounded-2xl shadow-xl"
+                                className="w-full h-full object-cover"
                             />
                         </div>
                     </div>

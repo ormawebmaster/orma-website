@@ -23,42 +23,40 @@ import {
 
 const applicationsPoints = [
     "Plans de travail sur mesure",
-    "Comptoirs professionnels (hôtels, restaurants, cliniques)",
-    "Mobilier design",
-    "Éléments sanitaires et vasques",
-    "Habillages muraux et surfaces techniques",
-    "Pièces thermoformées et formes organiques",
+    "Comptoirs professionnels (hôtellerie, restauration, santé)",
+    "Mobilier intégré design",
+    "Habillages muraux techniques",
+    "Formes organiques thermoformées",
 ];
 
 const expertisesPoints = [
     "Découpe CNC de précision",
-    "Assemblage invisible",
-    "Collage et jonctions parfaites",
-    "Thermoformage et cintrage",
+    "Collage et jonctions invisibles",
+    "Thermoformage & cintrage",
     "Ponçage et finitions professionnelles",
     "Création de formes complexes",
 ];
 
 const secteursPoints = [
-    "Hôtellerie & Restauration",
-    "Commerces & Espaces publics",
+    "Santé & laboratoires",
+    "Hôtellerie & restauration",
+    "Commerces & retail",
     "Architecture d'intérieur",
-    "Environnements médicaux et sanitaires",
-    "Bureaux et zones d'accueil",
-    "Résidentiel & projets privés",
+    "Bureaux & zones d'accueil",
+    "Résidentiel premium",
 ];
 
 const engagementsPoints = [
-    "Étude du besoin & conseil technique",
+    "Analyse des besoins",
     "Conception sur mesure",
     "Fabrication de précision",
-    "Montage & installation professionnelle",
+    "Installation professionnelle",
     "Contrôle qualité systématique",
 ];
 
 const maintenancePoints = [
     "Réparation des fissures",
-    "Reprise des surfaces rayées",
+    "Restauration de surfaces rayées",
     "Ponçage et remise à neuf",
     "Ajustements et modifications",
 ];
@@ -66,19 +64,23 @@ const maintenancePoints = [
 const faqItems = [
     {
         question: "Quels matériaux Solid Surface utilisez-vous ?",
-        answer: "Nous travaillons avec Corian®, HI-MACS®, Krion® et autres marques reconnues.",
+        answer: "Nous travaillons principalement avec Corian®, HI-MACS® et d'autres références reconnues pour leur qualité, durabilité et conformité technique.",
     },
     {
-        question: "Proposez-vous du thermoformage ?",
-        answer: "Oui, nous réalisons le thermoformage dans notre atelier.",
+        question: "Proposez-vous le thermoformage ?",
+        answer: "Oui. Nous réalisons le thermoformage pour créer des formes courbes, continues et complexes.",
     },
     {
-        question: "Pouvez-vous installer les pièces sur site ?",
-        answer: "Oui, nos équipes assurent installation et mise en place finales.",
+        question: "Peut-on obtenir des assemblages invisibles ?",
+        answer: "Oui. Nos techniques de collage et de finition permettent des jonctions pratiquement invisibles.",
     },
     {
-        question: "Est-il possible de réparer un Solid Surface abîmé ?",
-        answer: "Oui, la plupart des surfaces peuvent être réparées ou restaurées.",
+        question: "Les surfaces Solid Surface sont-elles réparables ?",
+        answer: "Oui. Les rayures et petits dommages peuvent être restaurés, prolongeant considérablement la durée de vie du matériau.",
+    },
+    {
+        question: "Ces surfaces conviennent-elles aux environnements médicaux ?",
+        answer: "Oui. Leur structure non poreuse et hygiénique les rend parfaitement adaptées aux environnements de santé et laboratoires.",
     },
 ];
 
@@ -92,17 +94,17 @@ export default function SolidesSurfacesPage() {
                 </div>
                 <NavbarGreenTopBar />
                 <div className="relative z-10 px-6 md:px-12 lg:px-20 w-full">
-                  <div className="max-w-7xl mx-auto">
-                      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Solides Surfaces</h1>
-                      <p className="text-lg md:text-xl text-white/90 max-w-3xl">Résistance, hygiène, précision et design premium</p>
-                  </div>
+                    <div className="max-w-7xl mx-auto">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Solid Surface & matériaux techniques</h1>
+                        <p className="text-lg md:text-xl text-white/90 max-w-3xl">Résistance, hygiène, précision et design premium.</p>
+                    </div>
                 </div>
             </section>
 
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
                 <div className="max-w-4xl mx-auto">
-                    <p className="text-lg text-muted-foreground leading-relaxed mb-6">Les matériaux « Solid Surface » offrent <strong className="text-foreground">résistance, hygiène et design premium</strong>.</p>
-                    <p className="text-lg text-muted-foreground leading-relaxed">Nous maîtrisons l'ensemble du processus : découpe, façonnage, assemblage invisible et finition.</p>
+                    <p className="text-lg text-muted-foreground leading-relaxed mb-6">Les matériaux Solid Surface offrent des <strong className="text-foreground">performances techniques élevées et une esthétique sans joints visibles</strong>.</p>
+                    <p className="text-lg text-muted-foreground leading-relaxed">Nous maîtrisons l'ensemble du processus : découpe, thermoformage, assemblage invisible et finition haut de gamme.</p>
                 </div>
             </section>
 
@@ -114,14 +116,14 @@ export default function SolidesSurfacesPage() {
                                 <Layers className="w-5 h-5" /><span className="font-semibold">Solid Surface</span>
                             </div>
                             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Solutions en Solid Surface</h2>
-                            <p className="text-muted-foreground mb-6">Nous travaillons avec Corian®, HI-MACS®, Krion® et autres marques reconnues.</p>
+                            <p className="text-muted-foreground mb-6">Nous travaillons avec des références reconnues telles que Corian®, HI-MACS® et autres matériaux techniques certifiés, pour des réalisations durables et esthétiques.</p>
                             <h3 className="text-xl font-semibold text-foreground mb-4">Applications possibles</h3>
                             <ul className="space-y-3 mb-6">
                                 {applicationsPoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
                             </ul>
-                            <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">Des pièces uniques, élégantes et faciles à entretenir.</p>
+                            <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">Des surfaces continues, élégantes et durables.</p>
                         </div>
-                        <div><img src="/modern-minimalist-interior-architecture-with-natur.jpg" alt="Solid Surface" className="w-full h-auto rounded-2xl shadow-xl" /></div>
+                        <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/solutions-solid-surface.png" alt="Solid Surface" className="w-full h-full object-cover" /></div>
                     </div>
                 </div>
             </section>
@@ -129,18 +131,18 @@ export default function SolidesSurfacesPage() {
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 lg:order-1"><img src="/modern-laboratory-workspace.jpg" alt="Techniques" className="w-full h-auto rounded-2xl shadow-xl" /></div>
+                        <div className="order-2 lg:order-1 aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/techniques-fabrication-ss.png" alt="Techniques" className="w-full h-full object-cover" /></div>
                         <div className="order-1 lg:order-2">
                             <div className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full mb-4">
                                 <Scissors className="w-5 h-5" /><span className="font-semibold">Fabrication précision</span>
                             </div>
                             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Techniques de Fabrication</h2>
-                            <p className="text-muted-foreground mb-6">Notre atelier assure une production de haute précision.</p>
+                            <p className="text-muted-foreground mb-6">Notre atelier assure une fabrication de haute précision, garantissant des assemblages invisibles et des finitions irréprochables.</p>
                             <h3 className="text-xl font-semibold text-foreground mb-4">Nos expertises</h3>
                             <ul className="space-y-3 mb-6">
                                 {expertisesPoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
                             </ul>
-                            <p className="text-sm text-muted-foreground italic border-l-4 border-red-600 pl-4">Qualité contrôlée, conforme aux exigences professionnelles.</p>
+                            <p className="text-sm text-muted-foreground italic border-l-4 border-red-600 pl-4">La précision jusque dans le détail.</p>
                         </div>
                     </div>
                 </div>
@@ -154,14 +156,14 @@ export default function SolidesSurfacesPage() {
                                 <Building2 className="w-5 h-5" /><span className="font-semibold">Secteurs</span>
                             </div>
                             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Domaines d'Application</h2>
-                            <p className="text-muted-foreground mb-6">Nos réalisations s'adaptent à tous types d'environnements.</p>
+                            <p className="text-muted-foreground mb-6">Les Solid Surfaces s'adaptent aux environnements exigeants où hygiène, durabilité et design sont essentiels.</p>
                             <h3 className="text-xl font-semibold text-foreground mb-4">Secteurs concernés</h3>
                             <ul className="space-y-3 mb-6">
                                 {secteursPoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
                             </ul>
-                            <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">Surfaces robustes, hygiéniques et élégantes.</p>
+                            <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">Une matière polyvalente pour des usages exigeants.</p>
                         </div>
-                        <div><img src="/modern-mall-interior.jpg" alt="Secteurs" className="w-full h-auto rounded-2xl shadow-xl" /></div>
+                        <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/domaines-application-ss.jpg" alt="Secteurs" className="w-full h-full object-cover" /></div>
                     </div>
                 </div>
             </section>
@@ -169,18 +171,18 @@ export default function SolidesSurfacesPage() {
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 lg:order-1"><img src="/modern-executive-office.jpg" alt="Clé en main" className="w-full h-auto rounded-2xl shadow-xl" /></div>
+                        <div className="order-2 lg:order-1 aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/modern-executive-office.jpg" alt="Clé en main" className="w-full h-full object-cover" /></div>
                         <div className="order-1 lg:order-2">
                             <div className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full mb-4">
                                 <Settings className="w-5 h-5" /><span className="font-semibold">Clé en main</span>
                             </div>
                             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Service Clé en Main</h2>
-                            <p className="text-muted-foreground mb-6">Nous gérons votre projet de A à Z.</p>
+                            <p className="text-muted-foreground mb-6">Nous assurons une gestion complète du projet, de l'étude à l'installation.</p>
                             <h3 className="text-xl font-semibold text-foreground mb-4">Notre accompagnement</h3>
                             <ul className="space-y-3 mb-6">
                                 {engagementsPoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
                             </ul>
-                            <p className="text-sm text-muted-foreground italic border-l-4 border-red-600 pl-4">Un rendu impeccable et durable.</p>
+                            <p className="text-sm text-muted-foreground italic border-l-4 border-red-600 pl-4">Une exécution irréprochable et durable.</p>
                         </div>
                     </div>
                 </div>
@@ -194,14 +196,14 @@ export default function SolidesSurfacesPage() {
                                 <Wrench className="w-5 h-5" /><span className="font-semibold">Maintenance</span>
                             </div>
                             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Maintenance & Réparations</h2>
-                            <p className="text-muted-foreground mb-6">Pour prolonger la durée de vie de vos surfaces.</p>
+                            <p className="text-muted-foreground mb-6">Les surfaces Solid Surface sont réparables et durables. Nous assurons leur entretien et leur remise en état si nécessaire.</p>
                             <h3 className="text-xl font-semibold text-foreground mb-4">Services disponibles</h3>
                             <ul className="space-y-3 mb-6">
                                 {maintenancePoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
                             </ul>
-                            <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">Un matériau qui conserve son aspect neuf.</p>
+                            <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">Une surface qui conserve son aspect neuf.</p>
                         </div>
-                        <div><img src="/traditional-workshop-renovation.jpg" alt="Maintenance" className="w-full h-auto rounded-2xl shadow-xl" /></div>
+                        <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/traditional-workshop-renovation.jpg" alt="Maintenance" className="w-full h-full object-cover" /></div>
                     </div>
                 </div>
             </section>

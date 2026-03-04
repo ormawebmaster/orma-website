@@ -17,10 +17,10 @@ export function CTASection() {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8 text-balance">
-          Vous avez un projet ou une idée en tête?
+          Un projet ambitieux à concrétiser ?
         </h2>
         <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-          Contactez-nous dès aujourd'hui pour discuter de votre projet
+          Échangeons sur vos besoins et définissons ensemble la solution adaptée.
         </p>
         <Link href="/contact">
           <Button size="lg" className="bg-white hover:bg-gray-100 text-gray-900 text-lg px-10 py-6 rounded-full shadow-md font-medium">

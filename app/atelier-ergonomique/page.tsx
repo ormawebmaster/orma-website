@@ -23,70 +23,63 @@ import {
 } from "@/components/ui/accordion"
 
 const analysePoints = [
-    "Flux de travail et circulation interne",
+    "Flux, zones et circulation",
     "Postures et gestes répétitifs",
-    "Zones de tension ou de perte de productivité",
-    "Sécurité & conformité réglementaire",
-    "Contraintes matérielles et outils utilisés",
+    "Sécurité & conformité",
+    "Contraintes techniques et opérationnelles",
 ];
 
 const solutionsPoints = [
-    "Postes de travail réglables",
-    "Plans de travail ergonomiques",
-    "Rangements intégrés pour limiter les déplacements",
-    "Adaptation aux gestes répétitifs",
-    "Accessoires techniques (support outillage, éclairage)",
+    "Réglages & modularité",
+    "Plans de travail optimisés",
+    "Rangements intégrés",
+    "Accessoires et supports dédiés",
 ];
 
 const optimisationsPoints = [
-    "Organisation logique des zones de travail",
-    "Réduction des déplacements inutiles",
-    "Zones spécifiques : préparation, assemblage, stockage",
-    "Mise en place d'un flux linéaire et intuitif",
+    "Zoning & organisation",
+    "Réduction des trajets",
     "Solutions de rangement adaptées à la méthode 5S",
+    "Amélioration continue",
 ];
 
 const mobilierPoints = [
-    "Établis et postes industriels",
-    "Chariots techniques",
-    "Armoires sécurisées",
-    "Stations modulaires",
-    "Supports d'outils personnalisés",
+    "Établis & postes techniques",
+    "Armoires & rangements sécurisés",
+    "Chariots & accessoires",
+    "Solutions modulaires",
 ];
 
 const validationPoints = [
-    "Installation du mobilier et des équipements",
-    "Ajustements personnalisés",
-    "Adaptation aux utilisateurs finaux",
-    "Conseils ergonomiques",
-    "Tests sur poste et corrections",
+    "Installation sur site",
+    "Ajustements finaux",
+    "Tests et validation",
+    "Suivi après mise en service",
 ];
 
 const pointsFortsPoints = [
-    "Expertise ergonomique complète",
-    "Approche centrée utilisateur",
-    "Fabrication sur mesure",
-    "Solutions robustes et adaptées",
-    "Optimisation technique et esthétique",
-    "Accompagnement du concept à l'installation",
+    "Expertise ergonomique + fabrication intégrée",
+    "Solutions sur mesure et évolutives",
+    "Qualité durable",
+    "Accompagnement de bout en bout",
 ];
 
 const faqItems = [
     {
         question: "Proposez-vous une analyse ergonomique complète ?",
-        answer: "Oui, nous réalisons une étude détaillée avant toute conception.",
+        answer: "Oui. Nous analysons les flux, les gestes, les contraintes opérationnelles et la sécurité afin de concevoir un atelier réellement optimisé.",
     },
     {
-        question: "Pouvez-vous créer un atelier entièrement sur mesure ?",
-        answer: "Oui, que ce soit un poste unique ou un atelier complet.",
+        question: "Pouvez-vous améliorer un atelier déjà existant ?",
+        answer: "Oui. Nous intervenons sur l'existant : réorganisation des flux, optimisation des postes, ajout de mobilier technique et amélioration progressive.",
     },
     {
-        question: "Travaillez-vous pour des environnements industriels ?",
-        answer: "Oui, nous intervenons dans les ateliers techniques, usines et laboratoires.",
+        question: "Travaillez-vous uniquement pour l'industrie ?",
+        answer: "Non. Nos solutions s'adaptent à tout environnement professionnel : ateliers, laboratoires, zones techniques, logistique, maintenance et espaces de production.",
     },
     {
-        question: "Faites-vous l'installation et les réglages sur place ?",
-        answer: "Oui, installation, réglages et validation ergonomique sont inclus.",
+        question: "Intégrez-vous les contraintes de sécurité et de conformité ?",
+        answer: "Oui. Nos propositions tiennent compte des exigences réglementaires, des normes internes et des contraintes de terrain propres à chaque activité.",
     },
 ];
 
@@ -100,19 +93,19 @@ export default function AtelierErgonomiquePage() {
                 </div>
                 <NavbarGreenTopBar />
                 <div className="relative z-10 px-6 md:px-12 lg:px-20 w-full">
-                  <div className="max-w-7xl mx-auto">
-                      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Atelier Ergonomique (Innospace)</h1>
-                      <p className="text-lg md:text-xl text-white/90 max-w-3xl">
-                          Productivité, confort et sécurité pour vos environnements de travail
-                      </p>
-                  </div>
+                    <div className="max-w-7xl mx-auto">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Ingénierie Ergonomique (Innospace)</h1>
+                        <p className="text-lg md:text-xl text-white/90 max-w-3xl">
+                            Performance, confort et sécurité pour vos environnements de travail.
+                        </p>
+                    </div>
                 </div>
             </section>
 
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
                 <div className="max-w-4xl mx-auto">
-                    <p className="text-lg text-muted-foreground leading-relaxed mb-6">Les ateliers ergonomiques Innospace combinent <strong className="text-foreground">productivité, confort et sécurité</strong>.</p>
-                    <p className="text-lg text-muted-foreground leading-relaxed">Notre objectif : créer un espace où <strong className="text-foreground">chaque geste est optimisé</strong>.</p>
+                    <p className="text-lg text-muted-foreground leading-relaxed mb-6">Nos ateliers Innospace optimisent les flux, les gestes et l'organisation des postes.</p>
+                    <p className="text-lg text-muted-foreground leading-relaxed">Objectif : un environnement <strong className="text-foreground">plus efficace, plus sûr, et plus durable</strong> au quotidien.</p>
                 </div>
             </section>
 
@@ -124,14 +117,13 @@ export default function AtelierErgonomiquePage() {
                                 <Search className="w-5 h-5" /><span className="font-semibold">Analyse ergonomique</span>
                             </div>
                             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Analyse Ergonomique</h2>
-                            <p className="text-muted-foreground mb-6">Avant de concevoir l'espace, nous réalisons une étude approfondie.</p>
+                            <p className="text-muted-foreground mb-6">Avant toute conception, nous réalisons une analyse précise de vos usages, de vos contraintes et de vos objectifs de performance.</p>
                             <h3 className="text-xl font-semibold text-foreground mb-4">Ce que nous analysons</h3>
                             <ul className="space-y-3 mb-6">
                                 {analysePoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
                             </ul>
-                            <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">Une analyse détaillée pour une conception sur-mesure.</p>
                         </div>
-                        <div><img src="/modern-laboratory-workspace.jpg" alt="Analyse" className="w-full h-auto rounded-2xl shadow-xl" /></div>
+                        <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/analyse-ergonomique.jpg" alt="Analyse" className="w-full h-full object-cover" /></div>
                     </div>
                 </div>
             </section>
@@ -139,18 +131,17 @@ export default function AtelierErgonomiquePage() {
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 lg:order-1"><img src="/modern-executive-office.jpg" alt="Postes ergonomiques" className="w-full h-auto rounded-2xl shadow-xl" /></div>
+                        <div className="order-2 lg:order-1 aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/modern-executive-office.jpg" alt="Postes ergonomiques" className="w-full h-full object-cover" /></div>
                         <div className="order-1 lg:order-2">
                             <div className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full mb-4">
                                 <Users className="w-5 h-5" /><span className="font-semibold">Postes ergonomiques</span>
                             </div>
                             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Postes de Travail Ergonomiques</h2>
-                            <p className="text-muted-foreground mb-6">Des postes adaptés aux besoins physiques et opérationnels.</p>
+                            <p className="text-muted-foreground mb-6">Des postes adaptés à vos équipes, à vos tâches et à vos cadences, pour réduire la fatigue et améliorer la productivité.</p>
                             <h3 className="text-xl font-semibold text-foreground mb-4">Solutions proposées</h3>
                             <ul className="space-y-3 mb-6">
                                 {solutionsPoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
                             </ul>
-                            <p className="text-sm text-muted-foreground italic border-l-4 border-red-600 pl-4">Réduction de la fatigue et augmentation de l'efficacité.</p>
                         </div>
                     </div>
                 </div>
@@ -164,14 +155,13 @@ export default function AtelierErgonomiquePage() {
                                 <Move className="w-5 h-5" /><span className="font-semibold">Flux optimisés</span>
                             </div>
                             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Optimisation des Flux</h2>
-                            <p className="text-muted-foreground mb-6">Un atelier performant repose sur une bonne organisation.</p>
+                            <p className="text-muted-foreground mb-6">Une organisation claire pour réduire les déplacements inutiles et sécuriser les parcours de travail.</p>
                             <h3 className="text-xl font-semibold text-foreground mb-4">Nos optimisations</h3>
                             <ul className="space-y-3 mb-6">
                                 {optimisationsPoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
                             </ul>
-                            <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">Des espaces qui fluidifient le travail.</p>
                         </div>
-                        <div><img src="/traditional-workshop-renovation.jpg" alt="Flux" className="w-full h-auto rounded-2xl shadow-xl" /></div>
+                        <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/flux-optimises.jpg" alt="Flux" className="w-full h-full object-cover" /></div>
                     </div>
                 </div>
             </section>
@@ -179,18 +169,17 @@ export default function AtelierErgonomiquePage() {
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 lg:order-1"><img src="/modern-office-interior-with-wooden-desk-and-archit.jpg" alt="Mobilier" className="w-full h-auto rounded-2xl shadow-xl" /></div>
+                        <div className="order-2 lg:order-1 aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/modern-office-interior-with-wooden-desk-and-archit.jpg" alt="Mobilier" className="w-full h-full object-cover" /></div>
                         <div className="order-1 lg:order-2">
                             <div className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full mb-4">
                                 <Package className="w-5 h-5" /><span className="font-semibold">Mobilier technique</span>
                             </div>
                             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Mobilier Technique Sur Mesure</h2>
-                            <p className="text-muted-foreground mb-6">Nous fabriquons du mobilier adapté à l'usage intensif.</p>
+                            <p className="text-muted-foreground mb-6">Du mobilier robuste et intelligent, conçu pour durer et s'adapter aux contraintes métiers.</p>
                             <h3 className="text-xl font-semibold text-foreground mb-4">Nos équipements</h3>
                             <ul className="space-y-3 mb-6">
                                 {mobilierPoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
                             </ul>
-                            <p className="text-sm text-muted-foreground italic border-l-4 border-red-600 pl-4">Conçu pour durer et faciliter les opérations.</p>
                         </div>
                     </div>
                 </div>
@@ -204,14 +193,13 @@ export default function AtelierErgonomiquePage() {
                                 <ClipboardCheck className="w-5 h-5" /><span className="font-semibold">Validation</span>
                             </div>
                             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Mise en Place & Validation</h2>
-                            <p className="text-muted-foreground mb-6">Nous validons l'ergonomie réelle sur le terrain.</p>
+                            <p className="text-muted-foreground mb-6">Installation, ajustements et validation terrain : nous sécurisons la prise en main et la performance réelle.</p>
                             <h3 className="text-xl font-semibold text-foreground mb-4">Notre accompagnement</h3>
                             <ul className="space-y-3 mb-6">
                                 {validationPoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
                             </ul>
-                            <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">Atelier optimisé et prêt à l'emploi.</p>
                         </div>
-                        <div><img src="/building-inspection-and-structural-analysis.jpg" alt="Validation" className="w-full h-auto rounded-2xl shadow-xl" /></div>
+                        <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/modern-executive-office.jpg" alt="Validation" className="w-full h-full object-cover" /></div>
                     </div>
                 </div>
             </section>
@@ -219,13 +207,13 @@ export default function AtelierErgonomiquePage() {
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 lg:order-1"><img src="/modern-office-building.jpg" alt="Pourquoi ORMA" className="w-full h-auto rounded-2xl shadow-xl" /></div>
+                        <div className="order-2 lg:order-1 aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/modern-office-building.jpg" alt="Pourquoi ORMA" className="w-full h-full object-cover" /></div>
                         <div className="order-1 lg:order-2">
                             <div className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full mb-4">
                                 <Target className="w-5 h-5" /><span className="font-semibold">Nos atouts</span>
                             </div>
                             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Pourquoi Choisir ORMA ?</h2>
-                            <p className="text-muted-foreground mb-6">Nos points forts pour votre atelier Innospace.</p>
+                            <p className="text-muted-foreground mb-6">Une approche complète, de l'analyse ergonomique à la fabrication, avec un haut niveau d'exigence.</p>
                             <h3 className="text-xl font-semibold text-foreground mb-4">Nos avantages</h3>
                             <ul className="space-y-3 mb-6">
                                 {pointsFortsPoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
@@ -238,7 +226,7 @@ export default function AtelierErgonomiquePage() {
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-[#F3F4F6]">
                 <div className="max-w-4xl mx-auto">
                     <div className="text-left mb-12">
-                        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">FAQ – Atelier Ergonomique</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">FAQ – Ingénierie ergonomique (Innospace)</h2>
                     </div>
                     <Accordion type="single" collapsible className="space-y-4">
                         {faqItems.map((item, i) => (

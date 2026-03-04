@@ -22,71 +22,66 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion"
 
-const avantagesPoints = [
-    "Résistance à l'usure, aux UV et à l'humidité",
-    "Couleurs vives et haute définition",
-    "Aucune délamination ou écaillage",
-    "Finition parfaitement lisse",
-    "Convient aux environnements exigeants",
+const finitionsPoints = [
+    "Laquage professionnel",
+    "Vernis et protections spécifiques",
+    "Traitements anti-UV",
+    "Protection contre l'usure",
+    "Textures et effets spéciaux",
+];
+
+const sublimationPoints = [
+    "Couleurs stables et profondes",
+    "Résistance aux UV",
+    "Impression haute définition",
+    "Surface homogène",
+    "Durabilité renforcée",
 ];
 
 const supportsPoints = [
-    "Aluminium haute finition",
-    "Panneaux rigides (composites, surfaces techniques)",
-    "Textiles techniques",
-    "Plaques décoratives",
-    "Éléments graphiques et signalétiques",
+    "Aluminium traité",
+    "Panneaux composites",
+    "Bois technique",
+    "Surfaces décoratives",
+    "Éléments de mobilier",
 ];
 
 const domainesPoints = [
-    "Signalétique & panneaux informatifs",
-    "Décorations murales haute qualité",
-    "Panneaux d'identité visuelle",
-    "Mobilier décoratif sublimé",
-    "Textiles techniques personnalisés",
-    "Projets architecturaux et artistiques",
-];
-
-const processusSteps = [
-    "Analyse du support et préparation",
-    "Traitement et correction graphique",
-    "Impression haute résolution",
-    "Transfert thermique professionnel",
-    "Contrôle qualité complet",
-    "Emballage & livraison sécurisée",
-];
-
-const personnalisationPoints = [
-    "Finition brillante, satinée ou mate",
-    "Impression bord à bord",
-    "Formats personnalisés",
-    "Séries limitées ou prototypes",
-    "Visuels haute résolution",
+    "Signalétique haut de gamme",
+    "Aménagement retail",
+    "Habillages muraux décoratifs",
+    "Mobilier personnalisé",
+    "Projets architecturaux",
 ];
 
 const durabilitePoints = [
     "Nettoyage simple",
     "Résistance aux rayures",
-    "Excellente tenue dans le temps",
-    "Convient aux zones de fort passage",
+    "Stabilité des couleurs",
+    "Longévité accrue",
+    "Adapté aux environnements publics",
 ];
 
 const faqItems = [
     {
-        question: "Quels types de supports peuvent être sublimés ?",
-        answer: "L'aluminium, les panneaux rigides compatibles et certains textiles techniques.",
+        question: "Quelles finitions proposez-vous ?",
+        answer: "Nous proposons laquage professionnel, vernis spécifiques, protections techniques et traitements adaptés aux environnements exigeants.",
     },
     {
-        question: "La sublimation résiste-t-elle aux UV ?",
-        answer: "Oui, les couleurs conservent leur intensité grâce à une excellente résistance.",
+        question: "En quoi la sublimation est-elle différente d'une impression classique ?",
+        answer: "La sublimation intègre le visuel directement dans la matière par transfert thermique, garantissant durabilité et homogénéité sans film de surface.",
     },
     {
-        question: "Est-il possible de produire des petites séries ?",
-        answer: "Oui, nous proposons aussi bien des pièces uniques que des séries limitées.",
+        question: "Les couleurs résistent-elles aux UV ?",
+        answer: "Oui. Nos procédés assurent une excellente stabilité face aux UV et aux usages intensifs.",
     },
     {
-        question: "Proposez-vous un service de création graphique ?",
-        answer: "Oui, nous pouvons vous accompagner dans la conception de vos visuels.",
+        question: "Peut-on personnaliser des petites séries ?",
+        answer: "Oui. Nous réalisons des pièces unitaires comme des petites ou moyennes séries.",
+    },
+    {
+        question: "Proposez-vous l'installation ?",
+        answer: "Oui. Nous pouvons assurer la fabrication et la pose des éléments finis.",
     },
 ];
 
@@ -95,24 +90,24 @@ export default function TechniquesSublimationPage() {
         <main className="min-h-screen bg-white">
             <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center">
                 <div className="absolute inset-0">
-                    <img src="/modern-minimalist-interior-architecture-with-natur.jpg" alt="Sublimation" className="w-full h-full object-cover" />
+                    <img src="/modern-minimalist-interior-architecture-with-natur.jpg" alt="Techniques de finition & sublimation" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-primary/40" />
                 </div>
                 <NavbarGreenTopBar />
                 <div className="relative z-10 px-6 md:px-12 lg:px-20 w-full">
-                  <div className="max-w-7xl mx-auto">
-                      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Techniques de Sublimation</h1>
-                      <p className="text-lg md:text-xl text-white/90 max-w-3xl">
-                          Impression haut de gamme pour une durabilité incomparable
-                      </p>
-                  </div>
+                    <div className="max-w-7xl mx-auto">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Techniques de finition & sublimation</h1>
+                        <p className="text-lg md:text-xl text-white/90 max-w-3xl">
+                            Finitions haut de gamme et personnalisation durable.
+                        </p>
+                    </div>
                 </div>
             </section>
 
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
                 <div className="max-w-4xl mx-auto">
-                    <p className="text-lg text-muted-foreground leading-relaxed mb-6">La sublimation permet un transfert permanent du visuel dans la matière.</p>
-                    <p className="text-lg text-muted-foreground leading-relaxed">Nous maîtrisons l'ensemble du processus pour un <strong className="text-foreground">rendu professionnel et homogène</strong>.</p>
+                    <p className="text-lg text-muted-foreground leading-relaxed mb-6">Nos techniques de finition et de sublimation valorisent chaque surface avec précision.</p>
+                    <p className="text-lg text-muted-foreground leading-relaxed">Nous assurons un <strong className="text-foreground">rendu homogène, durable et parfaitement maîtrisé</strong>.</p>
                 </div>
             </section>
 
@@ -121,17 +116,17 @@ export default function TechniquesSublimationPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div>
                             <div className="inline-flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full mb-4">
-                                <Sparkles className="w-5 h-5" /><span className="font-semibold">Impression durable</span>
+                                <Sparkles className="w-5 h-5" /><span className="font-semibold">Finitions</span>
                             </div>
-                            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Processus d'Impression Durable</h2>
-                            <p className="text-muted-foreground mb-6">La sublimation intègre le visuel dans la surface pour une tenue longue durée.</p>
-                            <h3 className="text-xl font-semibold text-foreground mb-4">Avantages</h3>
+                            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Finitions Haut de Gamme</h2>
+                            <p className="text-muted-foreground mb-6">La finition est l'étape qui révèle la qualité d'un projet. Nous appliquons des traitements précis pour garantir esthétique et longévité.</p>
+                            <h3 className="text-xl font-semibold text-foreground mb-4">Nos finitions</h3>
                             <ul className="space-y-3 mb-6">
-                                {avantagesPoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
+                                {finitionsPoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
                             </ul>
-                            <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">Personnalisation durable et esthétique.</p>
+                            <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">La qualité se voit dans les détails.</p>
                         </div>
-                        <div><img src="/modern-office-interior-with-wooden-desk-and-wall-m.jpg" alt="Sublimation" className="w-full h-auto rounded-2xl shadow-xl" /></div>
+                        <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/modern-office-interior-with-wooden-desk-and-wall-m.jpg" alt="Finitions" className="w-full h-full object-cover" /></div>
                     </div>
                 </div>
             </section>
@@ -139,58 +134,58 @@ export default function TechniquesSublimationPage() {
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 lg:order-1"><img src="/modern-laboratory-workspace.jpg" alt="Supports" className="w-full h-auto rounded-2xl shadow-xl" /></div>
+                        <div className="order-2 lg:order-1 aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/sublimation-haute-precision.png" alt="Sublimation" className="w-full h-full object-cover" /></div>
                         <div className="order-1 lg:order-2">
                             <div className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full mb-4">
+                                <Palette className="w-5 h-5" /><span className="font-semibold">Sublimation</span>
+                            </div>
+                            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Sublimation Haute Précision</h2>
+                            <p className="text-muted-foreground mb-6">La sublimation permet d'intégrer durablement un visuel dans la matière, sans film apparent.</p>
+                            <h3 className="text-xl font-semibold text-foreground mb-4">Avantages</h3>
+                            <ul className="space-y-3 mb-6">
+                                {sublimationPoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
+                            </ul>
+                            <p className="text-sm text-muted-foreground italic border-l-4 border-red-600 pl-4">L'image fusionnée à la surface.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="py-16 px-6 md:px-12 lg:px-20 bg-[#F3F4F6]">
+                <div className="max-w-6xl mx-auto">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <div className="inline-flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full mb-4">
                                 <Layers className="w-5 h-5" /><span className="font-semibold">Supports variés</span>
                             </div>
                             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Supports Compatibles</h2>
-                            <p className="text-muted-foreground mb-6">Nous sublimons plusieurs types de surfaces.</p>
-                            <h3 className="text-xl font-semibold text-foreground mb-4">Surfaces sublimables</h3>
+                            <p className="text-muted-foreground mb-6">Nous appliquons nos techniques de finition et sublimation sur différents supports professionnels.</p>
+                            <h3 className="text-xl font-semibold text-foreground mb-4">Supports</h3>
                             <ul className="space-y-3 mb-6">
                                 {supportsPoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
                             </ul>
-                            <p className="text-sm text-muted-foreground italic border-l-4 border-red-600 pl-4">Adhérence optimale du visuel garantie.</p>
+                            <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">Polyvalence maîtrisée.</p>
                         </div>
+                        <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/supports-compatibles.jpg" alt="Supports" className="w-full h-full object-cover" /></div>
                     </div>
                 </div>
             </section>
 
-            <section className="py-16 px-6 md:px-12 lg:px-20 bg-[#F3F4F6]">
+            <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <div className="inline-flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full mb-4">
+                        <div className="order-2 lg:order-1 aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/applications-professionnelles.jpg" alt="Applications" className="w-full h-full object-cover" /></div>
+                        <div className="order-1 lg:order-2">
+                            <div className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full mb-4">
                                 <Building2 className="w-5 h-5" /><span className="font-semibold">Applications pro</span>
                             </div>
                             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Applications Professionnelles</h2>
-                            <p className="text-muted-foreground mb-6">La sublimation offre un champ d'utilisation très large.</p>
-                            <h3 className="text-xl font-semibold text-foreground mb-4">Domaines d'utilisation</h3>
+                            <p className="text-muted-foreground mb-6">Ces techniques trouvent leur place dans les environnements exigeants et à forte visibilité.</p>
+                            <h3 className="text-xl font-semibold text-foreground mb-4">Domaines</h3>
                             <ul className="space-y-3 mb-6">
                                 {domainesPoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
                             </ul>
-                            <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">Pièces uniques ou projets complets.</p>
-                        </div>
-                        <div><img src="/modern-mall-interior.jpg" alt="Applications" className="w-full h-auto rounded-2xl shadow-xl" /></div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
-                <div className="max-w-6xl mx-auto">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 lg:order-1"><img src="/building-inspection-and-structural-analysis.jpg" alt="Processus" className="w-full h-auto rounded-2xl shadow-xl" /></div>
-                        <div className="order-1 lg:order-2">
-                            <div className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full mb-4">
-                                <Settings className="w-5 h-5" /><span className="font-semibold">Processus</span>
-                            </div>
-                            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Notre Processus de Réalisation</h2>
-                            <p className="text-muted-foreground mb-6">Nous prenons en charge votre projet de A à Z.</p>
-                            <h3 className="text-xl font-semibold text-foreground mb-4">Nos étapes</h3>
-                            <ul className="space-y-3 mb-6">
-                                {processusSteps.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
-                            </ul>
-                            <p className="text-sm text-muted-foreground italic border-l-4 border-red-600 pl-4">Finition irréprochable garantie.</p>
+                            <p className="text-sm text-muted-foreground italic border-l-4 border-red-600 pl-4">Valoriser l'espace par la finition.</p>
                         </div>
                     </div>
                 </div>
@@ -201,37 +196,17 @@ export default function TechniquesSublimationPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div>
                             <div className="inline-flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full mb-4">
-                                <Palette className="w-5 h-5" /><span className="font-semibold">Personnalisation</span>
-                            </div>
-                            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Options de Personnalisation</h2>
-                            <p className="text-muted-foreground mb-6">Configurations adaptées à vos besoins.</p>
-                            <h3 className="text-xl font-semibold text-foreground mb-4">Possibilités</h3>
-                            <ul className="space-y-3 mb-6">
-                                {personnalisationPoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
-                            </ul>
-                            <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">Sublimation adaptée au design et à l'usage final.</p>
-                        </div>
-                        <div><img src="/modern-executive-office.jpg" alt="Personnalisation" className="w-full h-auto rounded-2xl shadow-xl" /></div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
-                <div className="max-w-6xl mx-auto">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 lg:order-1"><img src="/modern-office-building.jpg" alt="Durabilité" className="w-full h-auto rounded-2xl shadow-xl" /></div>
-                        <div className="order-1 lg:order-2">
-                            <div className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full mb-4">
                                 <Shield className="w-5 h-5" /><span className="font-semibold">Durabilité</span>
                             </div>
-                            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Maintenance & Durabilité</h2>
-                            <p className="text-muted-foreground mb-6">La sublimation nécessite peu d'entretien.</p>
+                            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Durabilité & Maintenance</h2>
+                            <p className="text-muted-foreground mb-6">Nos finitions sont conçues pour résister aux usages intensifs tout en conservant leur qualité visuelle.</p>
                             <h3 className="text-xl font-semibold text-foreground mb-4">Caractéristiques</h3>
                             <ul className="space-y-3 mb-6">
                                 {durabilitePoints.map((item, i) => (<li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-muted-foreground">{item}</span></li>))}
                             </ul>
-                            <p className="text-sm text-muted-foreground italic border-l-4 border-red-600 pl-4">Éclat et netteté conservés pendant des années.</p>
+                            <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">Esthétique durable et technique maîtrisée.</p>
                         </div>
+                        <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/durabilite-maintenance.jpg" alt="Durabilité" className="w-full h-full object-cover" /></div>
                     </div>
                 </div>
             </section>
@@ -239,7 +214,7 @@ export default function TechniquesSublimationPage() {
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-[#F3F4F6]">
                 <div className="max-w-4xl mx-auto">
                     <div className="text-left mb-12">
-                        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">FAQ – Techniques de Sublimation</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">FAQ – Techniques de finition & sublimation</h2>
                     </div>
                     <Accordion type="single" collapsible className="space-y-4">
                         {faqItems.map((item, i) => (

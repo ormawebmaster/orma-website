@@ -10,45 +10,45 @@ import Link from "next/link"
 
 const domaines = [
     {
-        title: "Création & Conception",
-        description: "De l'idée au concept. Notre équipe de designers et d'ingénieurs transforme vos visions en projets concrets, alliant créativité et faisabilité technique.",
+        title: "Conception & Création",
+        description: "De l'idée au concept abouti, nous donnons forme à des solutions cohérentes et réalisables.",
         link: "/creation-conception",
-        image: "/a.webp",
+        image: "/cc.webp",
         icon: Lightbulb,
     },
     {
-        title: "Fabrication de Petite série",
-        description: "Production en petite série avec la même exigence de qualité que pour les pièces uniques. Flexibilité et réactivité pour répondre à vos besoins spécifiques.",
+        title: "Fabrication en petite série",
+        description: "Production maîtrisée et flexible, avec une exigence constante de qualité et de précision.",
         link: "/fabrication-petite-serie",
-        image: "/b.webp",
+        image: "/a.webp",
         icon: Factory,
     },
     {
-        title: "Développement de Projets",
-        description: "Accompagnement complet de vos projets, de la phase de prototypage à la réalisation finale. Nous gérons chaque étape avec rigueur et expertise.",
+        title: "Développement de projets",
+        description: "Un accompagnement structuré, du prototypage à la réalisation finale.",
         link: "/developpement-projets",
-        image: "/cc.webp",
+        image: "/modern-office-interior-with-wooden-desk-and-archit.jpg",
         icon: Rocket,
     },
     {
-        title: "Atelier Ergonomique (Innospace)",
-        description: "Conception d'espaces de travail ergonomiques favorisant le bien-être et la productivité. Solutions innovantes pour des environnements de travail optimisés.",
+        title: "Ingénierie ergonomique",
+        description: "Des espaces pensés pour la performance, alliant confort, usage et efficacité.",
         link: "/atelier-ergonomique",
-        image: "/architectural-blueprints-and-drawings.jpg",
+        image: "/ephj-stand-2025.jpg",
         icon: Users,
     },
     {
-        title: "Solides Surfaces",
-        description: "Maîtrise des matériaux solid surface pour des réalisations durables et esthétiques. Surfaces sans joints, hygiéniques et personnalisables à l'infini.",
+        title: "Solid Surface & matériaux techniques",
+        description: "Maîtrise des matériaux innovants, pour des réalisations durables et personnalisées.",
         link: "/solides-surfaces",
-        image: "/modern-office-interior-with-wooden-desk-and-archit.jpg",
+        image: "/solid-surface.png",
         icon: Layers,
     },
     {
-        title: "Techniques de Sublimation",
-        description: "Technologies de sublimation pour des finitions exceptionnelles. Personnalisation haute définition sur différents supports avec une durabilité remarquable.",
+        title: "Techniques de finition & sublimation",
+        description: "Des finitions de haute précision, pour un rendu esthétique exigeant et durable.",
         link: "/techniques-sublimation",
-        image: "/modern-minimalist-interior-architecture-with-natur.jpg",
+        image: "/expertises-hero.jpg",
         icon: Sparkles,
     },
 ];
@@ -60,7 +60,7 @@ export default function DomainesDeCompetencePage() {
             <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center">
                 <div className="absolute inset-0">
                     <img
-                        src="/a.jpg"
+                        src="/techniques-de-finition.jpg"
                         alt="Expertises"
                         className="w-full h-full object-cover"
                     />
@@ -73,7 +73,7 @@ export default function DomainesDeCompetencePage() {
                             Expertises
                         </h1>
                         <p className="text-lg md:text-xl text-white/90 max-w-3xl">
-                            Six pôles d'expertise au service de vos projets les plus ambitieux
+                            Des expertises maîtrisées, au cœur de chaque réalisation.
                         </p>
                     </div>
                 </div>
@@ -83,9 +83,8 @@ export default function DomainesDeCompetencePage() {
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
                 <div className="max-w-7xl mx-auto">
                     <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-                        Chez ORMA, notre savoir-faire se déploie à travers six domaines de compétence complémentaires.
-                        Chacun reflète notre engagement envers l'excellence, l'innovation et la qualité.
-                        De la création à la fabrication, nous maîtrisons l'ensemble de la chaîne de valeur.
+                        Chez ORMA, notre savoir-faire s'exprime à travers six expertises complémentaires.
+                        De la conception à la fabrication, nous maîtrisons l'ensemble de la chaîne de valeur afin de garantir cohérence, qualité et performance durable.
                     </p>
                 </div>
             </section>
@@ -96,10 +95,10 @@ export default function DomainesDeCompetencePage() {
                     {/* Section Header */}
                     <div className="text-left mb-12">
                         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                            Nos 6 Domaines d'Expertise
+                            Nos 6 Expertises
                         </h2>
                         <p className="text-muted-foreground max-w-2xl">
-                            Une expertise complète pour transformer vos idées en réalisations concrètes
+                            Une maîtrise complète, de l'idée à la réalisation.
                         </p>
                     </div>
 
@@ -149,8 +148,8 @@ export default function DomainesDeCompetencePage() {
                         Une approche intégrée
                     </h2>
                     <p className="text-muted-foreground leading-relaxed mb-8">
-                        Ces six domaines de compétence fonctionnent en synergie pour vous offrir des solutions complètes et cohérentes.
-                        De la conception à la réalisation, nous maîtrisons chaque étape de votre projet.
+                        Ces expertises fonctionnent en synergie pour offrir des solutions cohérentes et parfaitement maîtrisées.
+                        De la conception à l'installation, ORMA assure une continuité technique et qualitative à chaque étape.
                     </p>
                 </div>
             </section>
