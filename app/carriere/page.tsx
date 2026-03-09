@@ -19,17 +19,7 @@ const getIcon = (name: string) => {
     }
 };
 
-const StoryOverlay = () => (
-    <div className="absolute top-0 left-0 right-0 z-30 p-4 pt-6 md:pt-8">
-        <div className="flex space-x-1.5 mb-4 md:mb-5">
-            {[1, 2, 3].map((i) => (
-                <div key={i} className="h-0.5 md:h-1 flex-1 bg-white/25 rounded-full overflow-hidden">
-                    <div className={`h-full bg-white transition-all duration-[6000ms] linear ${i === 1 ? 'w-full' : 'w-0'}`} />
-                </div>
-            ))}
-        </div>
-    </div>
-);
+const StoryOverlay = () => null;
 
 export default function CarrierePage() {
     const videoRef = useRef<HTMLVideoElement>(null);
