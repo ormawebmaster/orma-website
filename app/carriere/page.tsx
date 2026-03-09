@@ -122,24 +122,24 @@ export default function CarrierePage() {
                                 {/* Removed the heavy dark gradient at the bottom so the text area isn't unnecessarily darkened */}
                                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent pointer-events-none" />
                             </div>
-                            {/* Controls Overlay */}
-                            <div className="absolute bottom-[30px] md:bottom-[40px] left-4 right-4 z-30 flex flex-col gap-3">
-                                <div className="flex justify-end gap-2 px-1">
-                                    <button
-                                        onClick={togglePlay}
-                                        className={`w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center text-white transition-all cursor-pointer ${isPlaying ? 'bg-black/50 backdrop-blur-md hover:bg-black/70' : 'bg-[#CC2128] animate-pulse shadow-[0_0_20px_rgba(204,33,40,0.6)]'}`}
-                                    >
-                                        {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
-                                    </button>
-                                    <button
-                                        onClick={toggleMute}
-                                        className="w-9 h-9 md:w-10 md:h-10 bg-black/50 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-black/70 transition-all cursor-pointer"
-                                    >
-                                        {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
-                                    </button>
-                                </div>
+                            {/* Play/Pause & Mute/Unmute Controls */}
+                            <div className="absolute bottom-[60px] md:bottom-[70px] right-3 md:right-4 z-30 flex flex-col gap-2">
+                                <button
+                                    onClick={togglePlay}
+                                    className={`w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center text-white transition-all cursor-pointer ${isPlaying ? 'bg-black/50 backdrop-blur-md hover:bg-black/70' : 'bg-[#CC2128] animate-pulse shadow-[0_0_20px_rgba(204,33,40,0.6)]'}`}
+                                >
+                                    {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
+                                </button>
+                                <button
+                                    onClick={toggleMute}
+                                    className="w-9 h-9 md:w-10 md:h-10 bg-black/50 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-black/70 transition-all cursor-pointer"
+                                >
+                                    {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
+                                </button>
+                            </div>
 
-                                {/* Progress Bar */}
+                            {/* Progress Bar */}
+                            <div className="absolute bottom-[30px] md:bottom-[40px] left-4 right-4 z-30 flex flex-col gap-3">
                                 <div
                                     className="w-full flex items-center h-4 group cursor-pointer relative"
                                     onClick={handleSeek}
