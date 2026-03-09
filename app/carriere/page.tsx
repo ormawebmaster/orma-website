@@ -139,7 +139,7 @@ export default function CarrierePage() {
                             </div>
 
                             {/* Progress Bar */}
-                            <div className="absolute bottom-[30px] md:bottom-[40px] left-4 right-4 z-30 flex flex-col gap-3">
+                            <div className="absolute bottom-[15px] md:bottom-[20px] left-4 right-4 z-30 flex flex-col gap-3">
                                 <div
                                     className="w-full flex items-center h-4 group cursor-pointer relative"
                                     onClick={handleSeek}
