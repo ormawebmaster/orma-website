@@ -3,7 +3,7 @@
 import { useRef, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Volume2, VolumeX, Play, Pause, Send, Wrench, Hammer, Briefcase, Calculator, Cpu, MapPin, Calendar, Clock, Phone, SkipBack, SkipForward } from "lucide-react"
+import { ArrowRight, Volume2, VolumeX, Play, Pause, Send, Wrench, Hammer, Briefcase, Calculator, Cpu, MapPin, Calendar, Clock, Phone } from "lucide-react"
 import { JOB_POSTS } from "@/lib/carriere-data"
 import { NavbarGreenTopBar } from "@/components/navbar-green-topbar"
 import { Footer } from "@/components/footer"
@@ -25,6 +25,7 @@ export default function CarrierePage() {
     const videoRef = useRef<HTMLVideoElement>(null);
     const [isPlaying, setIsPlaying] = useState(false);
     const [isMuted, setIsMuted] = useState(false);
+    const [progress, setProgress] = useState(0);
 
     const togglePlay = () => {
         if (videoRef.current) {
@@ -37,15 +38,19 @@ export default function CarrierePage() {
         }
     };
 
-    const jumpForward = () => {
-        if (videoRef.current) {
-            videoRef.current.currentTime += 10;
+    const handleTimeUpdate = () => {
+        if (videoRef.current && videoRef.current.duration) {
+            setProgress((videoRef.current.currentTime / videoRef.current.duration) * 100);
         }
     };
 
-    const jumpBackward = () => {
-        if (videoRef.current) {
-            videoRef.current.currentTime -= 10;
+    const handleSeek = (e: React.MouseEvent<HTMLDivElement>) => {
+        if (videoRef.current && videoRef.current.duration) {
+            const rect = e.currentTarget.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const newProgress = Math.max(0, Math.min(1, x / rect.width));
+            videoRef.current.currentTime = newProgress * videoRef.current.duration;
+            setProgress(newProgress * 100);
         }
     };
 
@@ -105,38 +110,49 @@ export default function CarrierePage() {
                             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/4 h-4 bg-gray-900 rounded-b-2xl z-40" />
                             <StoryOverlay />
                             <div className="absolute inset-0 z-10 pointer-events-none">
-                                <video ref={videoRef} className="w-full h-full object-cover brightness-105 pointer-events-auto" loop playsInline>
+                                <video
+                                    ref={videoRef}
+                                    className="w-full h-full object-cover brightness-105 pointer-events-auto"
+                                    loop
+                                    playsInline
+                                    onTimeUpdate={handleTimeUpdate}
+                                >
                                     <source src="/video2.mp4" type="video/mp4" />
                                 </video>
                                 {/* Removed the heavy dark gradient at the bottom so the text area isn't unnecessarily darkened */}
                                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent pointer-events-none" />
                             </div>
-                            {/* Play/Pause, Rewind/Forward & Mute/Unmute Controls */}
-                            <div className="absolute bottom-[90px] md:bottom-[110px] right-3 md:right-4 z-30 flex flex-col gap-2">
-                                <button
-                                    onClick={jumpBackward}
-                                    className="w-9 h-9 md:w-10 md:h-10 bg-black/50 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-black/70 transition-all cursor-pointer"
+                            {/* Controls Overlay */}
+                            <div className="absolute bottom-[30px] md:bottom-[40px] left-4 right-4 z-30 flex flex-col gap-3">
+                                <div className="flex justify-end gap-2 px-1">
+                                    <button
+                                        onClick={togglePlay}
+                                        className={`w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center text-white transition-all cursor-pointer ${isPlaying ? 'bg-black/50 backdrop-blur-md hover:bg-black/70' : 'bg-[#CC2128] animate-pulse shadow-[0_0_20px_rgba(204,33,40,0.6)]'}`}
+                                    >
+                                        {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
+                                    </button>
+                                    <button
+                                        onClick={toggleMute}
+                                        className="w-9 h-9 md:w-10 md:h-10 bg-black/50 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-black/70 transition-all cursor-pointer"
+                                    >
+                                        {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
+                                    </button>
+                                </div>
+
+                                {/* Progress Bar */}
+                                <div
+                                    className="w-full flex items-center h-4 group cursor-pointer relative"
+                                    onClick={handleSeek}
+                                    onMouseDown={(e) => {
+                                        // Optional: allow dragging in future
+                                        handleSeek(e);
+                                    }}
                                 >
-                                    <SkipBack className="w-4 h-4" />
-                                </button>
-                                <button
-                                    onClick={togglePlay}
-                                    className={`w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center text-white transition-all cursor-pointer ${isPlaying ? 'bg-black/50 backdrop-blur-md hover:bg-black/70' : 'bg-[#CC2128] animate-pulse shadow-[0_0_20px_rgba(204,33,40,0.6)]'}`}
-                                >
-                                    {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
-                                </button>
-                                <button
-                                    onClick={jumpForward}
-                                    className="w-9 h-9 md:w-10 md:h-10 bg-black/50 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-black/70 transition-all cursor-pointer"
-                                >
-                                    <SkipForward className="w-4 h-4" />
-                                </button>
-                                <button
-                                    onClick={toggleMute}
-                                    className="w-9 h-9 md:w-10 md:h-10 bg-black/50 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-black/70 transition-all cursor-pointer"
-                                >
-                                    {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
-                                </button>
+                                    <div className="w-full h-1 bg-white/30 rounded-full overflow-hidden relative">
+                                        <div className="absolute top-0 left-0 bottom-0 bg-[#CC2128] transition-all duration-75" style={{ width: `${progress}%` }} />
+                                    </div>
+                                    <div className="absolute w-3 h-3 bg-white rounded-full top-1/2 -translate-y-1/2 shadow transition-all duration-75" style={{ left: `calc(${progress}% - 6px)` }} />
+                                </div>
                             </div>
                             <div className="absolute inset-x-0 bottom-0 z-20 p-5 md:p-8 text-center pb-8 md:pb-10">
                                 <div className="mb-4 md:mb-6" />
