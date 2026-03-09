@@ -28,22 +28,6 @@ const StoryOverlay = () => (
                 </div>
             ))}
         </div>
-
-        <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-full border-2 border-[#CC2128] p-0.5 bg-white shadow-lg flex items-center justify-center overflow-hidden">
-                    <Image src="/logo-orma-1948.png" alt="ORMA" width={32} height={32} className="object-contain" />
-                </div>
-                <div>
-                    <p className="text-white text-[10px] md:text-xs font-black drop-shadow-md">Orma France</p>
-                    <p className="text-white/70 text-[8px] md:text-[9px] font-bold uppercase tracking-widest drop-shadow-md">Amancey • France</p>
-                </div>
-            </div>
-            <div className="flex space-x-2 md:space-x-3">
-                <Volume2 className="w-4 h-4 md:w-5 md:h-5 text-white/80" />
-                <Send className="w-4 h-4 md:w-5 md:h-5 text-white" />
-            </div>
-        </div>
     </div>
 );
 
