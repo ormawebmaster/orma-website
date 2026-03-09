@@ -3,7 +3,7 @@
 import { useRef, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Volume2, VolumeX, Play, Pause, Send, Wrench, Hammer, Briefcase, Calculator, Cpu, MapPin, Calendar, Clock, Phone } from "lucide-react"
+import { ArrowRight, Volume2, VolumeX, Play, Pause, Send, Wrench, Hammer, Briefcase, Calculator, Cpu, MapPin, Calendar, Clock, Phone, SkipBack, SkipForward } from "lucide-react"
 import { JOB_POSTS } from "@/lib/carriere-data"
 import { NavbarGreenTopBar } from "@/components/navbar-green-topbar"
 import { Footer } from "@/components/footer"
@@ -34,6 +34,18 @@ export default function CarrierePage() {
                 videoRef.current.play();
             }
             setIsPlaying(!isPlaying);
+        }
+    };
+
+    const jumpForward = () => {
+        if (videoRef.current) {
+            videoRef.current.currentTime += 10;
+        }
+    };
+
+    const jumpBackward = () => {
+        if (videoRef.current) {
+            videoRef.current.currentTime -= 10;
         }
     };
 
@@ -99,13 +111,25 @@ export default function CarrierePage() {
                                 {/* Removed the heavy dark gradient at the bottom so the text area isn't unnecessarily darkened */}
                                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent pointer-events-none" />
                             </div>
-                            {/* Play/Pause & Mute/Unmute Controls */}
+                            {/* Play/Pause, Rewind/Forward & Mute/Unmute Controls */}
                             <div className="absolute bottom-[90px] md:bottom-[110px] right-3 md:right-4 z-30 flex flex-col gap-2">
+                                <button
+                                    onClick={jumpBackward}
+                                    className="w-9 h-9 md:w-10 md:h-10 bg-black/50 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-black/70 transition-all cursor-pointer"
+                                >
+                                    <SkipBack className="w-4 h-4" />
+                                </button>
                                 <button
                                     onClick={togglePlay}
                                     className={`w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center text-white transition-all cursor-pointer ${isPlaying ? 'bg-black/50 backdrop-blur-md hover:bg-black/70' : 'bg-[#CC2128] animate-pulse shadow-[0_0_20px_rgba(204,33,40,0.6)]'}`}
                                 >
                                     {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
+                                </button>
+                                <button
+                                    onClick={jumpForward}
+                                    className="w-9 h-9 md:w-10 md:h-10 bg-black/50 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-black/70 transition-all cursor-pointer"
+                                >
+                                    <SkipForward className="w-4 h-4" />
                                 </button>
                                 <button
                                     onClick={toggleMute}
