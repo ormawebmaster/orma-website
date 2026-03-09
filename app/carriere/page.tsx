@@ -123,7 +123,7 @@ export default function CarrierePage() {
                                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent pointer-events-none" />
                             </div>
                             {/* Play/Pause & Mute/Unmute Controls */}
-                            <div className="absolute bottom-[60px] md:bottom-[70px] right-3 md:right-4 z-30 flex flex-col gap-2">
+                            <div className="absolute bottom-[90px] md:bottom-[110px] right-3 md:right-4 z-30 flex flex-col gap-2">
                                 <button
                                     onClick={togglePlay}
                                     className={`w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center text-white transition-all cursor-pointer ${isPlaying ? 'bg-black/50 backdrop-blur-md hover:bg-black/70' : 'bg-[#CC2128] animate-pulse shadow-[0_0_20px_rgba(204,33,40,0.6)]'}`}
