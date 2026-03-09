@@ -145,7 +145,7 @@ export default function CarrierePage() {
                                     onClick={() => {
                                         document.getElementById('offres')?.scrollIntoView({ behavior: 'smooth' });
                                     }}
-                                    className="block w-full py-3 md:py-4 bg-[#CC2128] hover:bg-red-700 text-white font-black text-xs md:text-sm rounded-xl transition-all shadow-xl animate-pulse cursor-pointer"
+                                    className="hidden w-full py-3 md:py-4 bg-[#CC2128] hover:bg-red-700 text-white font-black text-xs md:text-sm rounded-xl transition-all shadow-xl animate-pulse cursor-pointer"
                                 >
                                     POSTULER
                                 </button>
