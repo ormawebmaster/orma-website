@@ -129,7 +129,7 @@ export default function FabricationPetiteSeriePage() {
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 lg:order-1 aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/qualite-swiss-made.jpg" alt="Qualité Swiss Made" className="w-full h-full object-cover" /></div>
+                        <div className="order-2 lg:order-1 aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/processus-fabrication.jpg" alt="Qualité Swiss Made" className="w-full h-full object-cover" /></div>
                         <div className="order-1 lg:order-2">
                             <div className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full mb-4">
                                 <Award className="w-5 h-5" /><span className="font-semibold">Swiss Made</span>
@@ -169,7 +169,7 @@ export default function FabricationPetiteSeriePage() {
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 lg:order-1 aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/processus-fabrication.jpg" alt="Processus" className="w-full h-full object-cover" /></div>
+                        <div className="order-2 lg:order-1 aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/qualite-swiss-made.jpg" alt="Processus" className="w-full h-full object-cover" /></div>
                         <div className="order-1 lg:order-2">
                             <div className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full mb-4">
                                 <ClipboardCheck className="w-5 h-5" /><span className="font-semibold">Méthodologie</span>

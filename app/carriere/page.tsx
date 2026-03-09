@@ -120,7 +120,7 @@ export default function CarrierePage() {
                             <StoryOverlay />
                             <div className="absolute inset-0 z-10">
                                 <video ref={videoRef} className="w-full h-full object-cover brightness-110" loop playsInline>
-                                    <source src="/video-recrutement.mp4" type="video/mp4" />
+                                    <source src="/video2.mp4" type="video/mp4" />
                                 </video>
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-transparent to-black/20" />
                             </div>

@@ -154,7 +154,7 @@ export default function CreationConceptionPage() {
                             </ul>
                             <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">Visualiser avant de fabriquer.</p>
                         </div>
-                        <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/design-modelisation.jpg" alt="Modélisation" className="w-full h-full object-cover" /></div>
+                        <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/accompagnement-validation.png" alt="Modélisation" className="w-full h-full object-cover" /></div>
                     </div>
                 </div>
             </section>
@@ -162,7 +162,7 @@ export default function CreationConceptionPage() {
             <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 lg:order-1 aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/conception-technique.jpg" alt="Conception technique" className="w-full h-full object-cover" /></div>
+                        <div className="order-2 lg:order-1 aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/design-modelisation.jpg" alt="Conception technique" className="w-full h-full object-cover" /></div>
                         <div className="order-1 lg:order-2">
                             <div className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full mb-4">
                                 <Cog className="w-5 h-5" /><span className="font-semibold">Conception technique</span>
@@ -194,7 +194,7 @@ export default function CreationConceptionPage() {
                             </ul>
                             <p className="text-sm text-muted-foreground italic border-l-4 border-primary pl-4">Une validation maîtrisée avant réalisation.</p>
                         </div>
-                        <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/accompagnement-validation.png" alt="Accompagnement" className="w-full h-full object-cover" /></div>
+                        <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-xl"><img src="/conception-technique.jpg" alt="Accompagnement" className="w-full h-full object-cover" /></div>
                     </div>
                 </div>
             </section>
