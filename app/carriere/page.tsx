@@ -118,14 +118,15 @@ export default function CarrierePage() {
                         <div className="relative w-full aspect-[9/18.5] bg-[#111] rounded-[40px] md:rounded-[50px] border-[6px] md:border-[10px] border-gray-900 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.9)] overflow-hidden">
                             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/4 h-4 bg-gray-900 rounded-b-2xl z-40" />
                             <StoryOverlay />
-                            <div className="absolute inset-0 z-10">
-                                <video ref={videoRef} className="w-full h-full object-cover brightness-110" loop playsInline>
+                            <div className="absolute inset-0 z-10 pointer-events-none">
+                                <video ref={videoRef} className="w-full h-full object-cover brightness-105 pointer-events-auto" loop playsInline>
                                     <source src="/video2.mp4" type="video/mp4" />
                                 </video>
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-transparent to-black/20" />
+                                {/* Removed the heavy dark gradient at the bottom so the text area isn't unnecessarily darkened */}
+                                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent pointer-events-none" />
                             </div>
                             {/* Play/Pause & Mute/Unmute Controls */}
-                            <div className="absolute bottom-[100px] md:bottom-[130px] right-3 md:right-4 z-30 flex flex-col gap-2">
+                            <div className="absolute bottom-[40px] md:bottom-[50px] right-3 md:right-4 z-30 flex flex-col gap-2">
                                 <button
                                     onClick={togglePlay}
                                     className={`w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center text-white transition-all cursor-pointer ${isPlaying ? 'bg-black/50 backdrop-blur-md hover:bg-black/70' : 'bg-[#CC2128] animate-pulse shadow-[0_0_20px_rgba(204,33,40,0.6)]'}`}
