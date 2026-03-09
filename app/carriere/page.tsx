@@ -104,9 +104,9 @@ export default function CarrierePage() {
                         </div>
                     </div>
 
-                    {/* Vidéo Mobile Style */}
-                    <div className="flex-1 flex justify-center order-2 w-full max-w-[240px] sm:max-w-[280px] lg:max-w-[320px]">
-                        <div className="relative w-full aspect-[9/18.5] bg-[#111] rounded-[40px] md:rounded-[50px] border-[6px] md:border-[10px] border-gray-900 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.9)] overflow-hidden">
+                    {/* Vidéo Mobile Style - Élargi (~ +1cm) */}
+                    <div className="flex-1 flex justify-center order-2 w-full max-w-[260px] sm:max-w-[305px] lg:max-w-[350px]">
+                        <div className="relative w-full aspect-[10/18.5] bg-[#111] rounded-[40px] md:rounded-[50px] border-[6px] md:border-[10px] border-gray-900 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.9)] overflow-hidden">
                             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/4 h-4 bg-gray-900 rounded-b-2xl z-40" />
                             <StoryOverlay />
                             <div className="absolute inset-0 z-10 pointer-events-none">
