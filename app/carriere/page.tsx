@@ -109,58 +109,82 @@ export default function CarrierePage() {
                         <div className="relative w-full aspect-[10/18.5] bg-[#111] rounded-[40px] md:rounded-[50px] border-[6px] md:border-[10px] border-gray-900 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.9)] overflow-hidden">
                             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/4 h-4 bg-gray-900 rounded-b-2xl z-40" />
                             <StoryOverlay />
-                            <div className="absolute inset-0 z-10 pointer-events-none">
+                            <div className={`absolute inset-0 z-10 ${progress >= 99.5 ? 'pointer-events-auto cursor-pointer' : 'pointer-events-none'}`}
+                                onClick={() => {
+                                    if (progress >= 99.5) {
+                                        // Reset video if clicked at the end
+                                        if (videoRef.current) {
+                                            videoRef.current.currentTime = 0;
+                                            videoRef.current.play();
+                                            setIsPlaying(true);
+                                        }
+                                    }
+                                }}
+                            >
                                 <video
                                     ref={videoRef}
                                     className="w-full h-full object-cover brightness-105 pointer-events-auto"
-                                    loop
+                                    loop={false}
                                     playsInline
                                     onTimeUpdate={handleTimeUpdate}
+                                    onEnded={() => {
+                                        setIsPlaying(false);
+                                        setProgress(100);
+                                    }}
                                 >
                                     <source src="/video2.mp4" type="video/mp4" />
                                 </video>
                                 {/* Removed the heavy dark gradient at the bottom so the text area isn't unnecessarily darkened */}
                                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent pointer-events-none" />
-                            </div>
-                            {/* Play/Pause & Mute/Unmute Controls */}
-                            <div className="absolute bottom-[90px] md:bottom-[110px] right-3 md:right-4 z-30 flex flex-col gap-2">
-                                <button
-                                    onClick={togglePlay}
-                                    className={`w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center text-white transition-all cursor-pointer ${isPlaying ? 'bg-black/50 backdrop-blur-md hover:bg-black/70' : 'bg-[#CC2128] animate-pulse shadow-[0_0_20px_rgba(204,33,40,0.6)]'}`}
-                                >
-                                    {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
-                                </button>
-                                <button
-                                    onClick={toggleMute}
-                                    className="w-9 h-9 md:w-10 md:h-10 bg-black/50 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-black/70 transition-all cursor-pointer"
-                                >
-                                    {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
-                                </button>
+
+                                {/* Sombre overlay at the end */}
+                                {progress >= 99.5 && (
+                                    <div className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center pointer-events-none transition-all duration-500">
+                                        <Play className="w-16 h-16 text-white/50" />
+                                    </div>
+                                )}
                             </div>
 
-                            {/* Progress Bar */}
-                            <div className="absolute bottom-[15px] md:bottom-[20px] left-4 right-4 z-30 flex flex-col gap-3">
-                                <div
-                                    className="w-full flex items-center h-4 group cursor-pointer relative"
-                                    onClick={handleSeek}
-                                    onMouseDown={(e) => {
-                                        // Optional: allow dragging in future
-                                        handleSeek(e);
-                                    }}
-                                >
-                                    <div className="w-full h-1 bg-white/30 rounded-full overflow-hidden relative">
-                                        <div className="absolute top-0 left-0 bottom-0 bg-[#CC2128] transition-all duration-75" style={{ width: `${progress}%` }} />
+                            {/* Controls (hidden at the very end) */}
+                            <div className={`transition-opacity duration-300 ${progress >= 99.5 ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
+                                {/* Play/Pause & Mute/Unmute Controls */}
+                                <div className="absolute bottom-[90px] md:bottom-[110px] right-3 md:right-4 z-30 flex flex-col gap-2">
+                                    <button
+                                        onClick={togglePlay}
+                                        className={`w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center text-white transition-all cursor-pointer ${isPlaying ? 'bg-black/50 backdrop-blur-md hover:bg-black/70' : 'bg-[#CC2128] animate-pulse shadow-[0_0_20px_rgba(204,33,40,0.6)]'}`}
+                                    >
+                                        {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
+                                    </button>
+                                    <button
+                                        onClick={toggleMute}
+                                        className="w-9 h-9 md:w-10 md:h-10 bg-black/50 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-black/70 transition-all cursor-pointer"
+                                    >
+                                        {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
+                                    </button>
+                                </div>
+
+                                {/* Progress Bar */}
+                                <div className="absolute bottom-[15px] md:bottom-[20px] left-4 right-4 z-30 flex flex-col gap-3">
+                                    <div
+                                        className="w-full flex items-center h-4 group cursor-pointer relative"
+                                        onClick={handleSeek}
+                                    >
+                                        <div className="w-full h-1 bg-white/30 rounded-full overflow-hidden relative">
+                                            <div className="absolute top-0 left-0 bottom-0 bg-[#CC2128] transition-all duration-75" style={{ width: `${progress}%` }} />
+                                        </div>
+                                        <div className="absolute w-3 h-3 bg-white rounded-full top-1/2 -translate-y-1/2 shadow transition-all duration-75" style={{ left: `calc(${progress}% - 6px)` }} />
                                     </div>
-                                    <div className="absolute w-3 h-3 bg-white rounded-full top-1/2 -translate-y-1/2 shadow transition-all duration-75" style={{ left: `calc(${progress}% - 6px)` }} />
                                 </div>
                             </div>
-                            <div className="absolute inset-x-0 bottom-0 z-20 p-5 md:p-8 text-center pb-8 md:pb-10">
+
+                            {/* POSTULER Button (Only shown at the end) */}
+                            <div className={`absolute inset-x-0 bottom-0 z-40 p-5 md:p-8 text-center pb-8 md:pb-10 transition-all duration-500 transform ${progress >= 99.5 ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0 pointer-events-none'}`}>
                                 <div className="mb-4 md:mb-6" />
                                 <button
                                     onClick={() => {
                                         document.getElementById('offres')?.scrollIntoView({ behavior: 'smooth' });
                                     }}
-                                    className="hidden w-full py-3 md:py-4 bg-[#CC2128] hover:bg-red-700 text-white font-black text-xs md:text-sm rounded-xl transition-all shadow-xl animate-pulse cursor-pointer"
+                                    className="block w-full py-3 md:py-4 bg-[#CC2128] hover:bg-red-700 text-white font-black text-xs md:text-sm rounded-xl transition-all shadow-[0_0_30px_rgba(204,33,40,0.5)] animate-bounce cursor-pointer"
                                 >
                                     POSTULER
                                 </button>
