@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, useState } from "react"
+import { useRef, useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight, Volume2, VolumeX, Play, Pause, Send, Wrench, Hammer, Briefcase, Calculator, Cpu, MapPin, Calendar, Clock, Phone } from "lucide-react"
@@ -21,11 +21,13 @@ const getIcon = (name: string) => {
 
 const StoryOverlay = () => null;
 
-export default function CarrierePage() {
+export default function Carriere2Page() {
     const videoRef = useRef<HTMLVideoElement>(null);
     const [isPlaying, setIsPlaying] = useState(false);
     const [isMuted, setIsMuted] = useState(false);
     const [progress, setProgress] = useState(0);
+
+    // Video starts paused — no auto-play
 
     const togglePlay = () => {
         if (videoRef.current) {
@@ -104,11 +106,9 @@ export default function CarrierePage() {
                         </div>
                     </div>
 
-                    {/* Vidéo Mobile Style - Élargi (~ +1cm) */}
-                    <div className="flex-1 flex justify-center order-2 w-full max-w-[260px] sm:max-w-[305px] lg:max-w-[350px]">
-                        <div className="relative w-full aspect-[10/18.5] bg-[#111] rounded-[40px] md:rounded-[50px] border-[6px] md:border-[10px] border-gray-900 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.9)] overflow-hidden">
-                            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/4 h-4 bg-gray-900 rounded-b-2xl z-40" />
-                            <StoryOverlay />
+                    {/* Vidéo */}
+                    <div className="flex-1 flex justify-center order-2 w-full max-w-[260px] sm:max-w-[300px] lg:max-w-[360px]">
+                        <div className="relative w-full aspect-[9/16] rounded-3xl shadow-[0_30px_60px_-15px_rgba(0,0,0,0.4)] overflow-hidden">
                             <div className={`absolute inset-0 z-10 ${progress >= 99.5 ? 'pointer-events-auto cursor-pointer' : 'pointer-events-none'}`}
                                 onClick={() => {
                                     if (progress >= 99.5) {
@@ -137,6 +137,8 @@ export default function CarrierePage() {
                                 {/* Removed the heavy dark gradient at the bottom so the text area isn't unnecessarily darkened */}
                                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent pointer-events-none" />
 
+
+
                                 {/* Sombre overlay at the end */}
                                 {progress >= 99.5 && (
                                     <div className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center pointer-events-none transition-all duration-500">
@@ -145,8 +147,20 @@ export default function CarrierePage() {
                                 )}
                             </div>
 
-                            {/* Controls (hidden at the very end) */}
-                            <div className={`transition-opacity duration-300 ${progress >= 99.5 ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
+                            {/* Centered Play icon when paused (not at end) */}
+                            {!isPlaying && progress < 99.5 && (
+                                <div
+                                    className="absolute inset-0 z-20 bg-black/30 rounded-3xl flex items-center justify-center cursor-pointer transition-all duration-300"
+                                    onClick={togglePlay}
+                                >
+                                    <div className="w-16 h-16 md:w-20 md:h-20 bg-[#CC2128]/90 backdrop-blur-md rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(204,33,40,0.5)] hover:scale-110 transition-transform">
+                                        <Play className="w-8 h-8 md:w-10 md:h-10 text-white ml-1" />
+                                    </div>
+                                </div>
+                            )}
+
+                            {/* Controls (hidden when paused or at the very end) */}
+                            <div className={`transition-opacity duration-300 ${!isPlaying || progress >= 99.5 ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
                                 {/* Play/Pause & Mute/Unmute Controls */}
                                 <div className="absolute bottom-[90px] md:bottom-[110px] right-3 md:right-4 z-30 flex flex-col gap-2">
                                     <button
